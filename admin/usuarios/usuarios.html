@@ -1,0 +1,475 @@
+
+<div id="modals">
+	<div id="modal-eliminar" uk-modal>
+
+		        	<div class="uk-modal-dialog uk-modal-body">
+		        		<h2 class="uk-modal-title">:(</h2>
+		        		<p>Estas seguro de borrar a este usuario?, sus datos se eliminarán de manera permanente</p>
+		        		<p class="uk-text-right">
+		        			<button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+		        			<input type="" name="idusuario" id="idusuario" value="" class="display" />
+		        		<button class="uk-button uk-button-primary uk-modal-close" type="button" onclick="EliminarUsuario();">Eliminar</button>
+		        		</p>
+		        	</div>
+	</div>
+
+		<div id="modal-editar" uk-modal>
+
+		        	<div class="modale uk-modal-dialog uk-modal-body">
+		        		<p class="uk-text-right">
+		        		<div class="datosp">	
+				        	<div class="Perfilpics" id="imgperfil" >	
+								<img id="Perfilpic2"  src=""> 
+							</div>	        			
+						 	<div class="conlist"><p>Nombre</p> <input type="text" id="nameimput" class="form-control modeditar" placeholder="" ></div>
+						 	<div class="conlist"><p>Identificador</p> <input name="idusuario" id="idusuario2" class="form-control modeditar" disabled/></div>
+							<div class="conlist"><p>Correo electrónico</p><input type="text" id="mailinput2" class="form-control modeditar" placeholder="" ></div>
+							<div class="conlist"><p>Ubicación</p> <input type="text" id="ubinput2" class="form-control modeditar" placeholder="" ></div>
+							<div class="conlist"><p>N° de tarjeta</p> <input type="text" id="credinput2" class="form-control modeditar" placeholder=""></div>
+							<input type="hidden" id="uimg" value="">
+							
+							<input onclick="editarUsuarioLista();" type="button" id="actualizarp" name="" value="Guardar cambios" class="continuar" style="display: none">
+							<div style="margin-top: 20px;">
+							<button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>		        		
+		        			<button class="uk-button uk-button-primary uk-modal-close" type="button" onclick="editado();">Actualizar</button>
+		        			</div>
+						</div>
+
+		        		</p>
+		        	</div>
+	</div>
+
+</div>
+
+
+
+<!-- js -->
+<div class="PerfilUsuario" id="PerfilUsuario">
+
+
+
+
+<style type="text/css">
+			.control{
+				display:flex;
+				margin-top: 10px;
+				height: 40px;
+				
+				width: 60%;
+				justify-content: space-between;
+			}
+			.contForm{
+				width: 80%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.PerfilUsuario{
+				display: flex;
+				justify-content: center;
+			}
+			.borrarUser span{
+				font-size: 19px !important;
+
+			}
+			.borrarUser {
+				display: flex;
+				align-items: center;
+
+			}
+			.perfilhead, .perfilbloq, .perfilbloq2{
+				width: 100%;
+				height: 220px;
+				background:white;
+				display: flex;
+    			justify-content: space-between;
+    			margin-bottom: 15px;
+    			transition: .3s;
+			}
+			.perfilbloq, .perfilbloq2{
+				width: 100%;
+				height: 450px;
+				background:white;
+				display: flex;
+    			justify-content: space-between;
+    			margin-bottom: 15px;
+    			transition: .3s;
+			}
+			.perfilbloq{
+				width: 68%;
+			}
+			.perfilbloq2{
+				width: 30%;
+			}
+			.bloque
+			{
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				justify-content: space-between;
+			}
+
+			#Perfilpic{
+				width: 157px;
+				height: 157px;
+				background: #e9e7ed;
+				border-radius: 50%;
+				backsground-image: url("https://pbs.twimg.com/profile_images/831544618097451008/7xJOQ0Xg.jpg");
+				 background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+				-webkit-box-shadow: -1px 7px 12px -1px rgba(0,0,0,0.18);
+				-moz-box-shadow: -1px 7px 12px -1px rgba(0,0,0,0.18);
+				box-shadow: -1px 7px 12px -1px rgba(0,0,0,0.18);
+			}
+			.Userdetails{
+			display: flex;
+		    flex-wrap: wrap;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+		    margin-left: 100px;
+			}
+			.uk-child-width-expand, .uk-child-width-expand:before, .uk-child-width-expand:after{
+				position: initial !important;
+			}
+			.uk-tab>.uk-active>a {
+				position: initial !important;
+			}
+			.uk-tab>*>a:focus, .uk-tab>*>a:hover{
+				position: initial !important;
+			}
+			.volver{
+				display: flex;
+				align-items: center;
+			}
+			.itemp{
+				titempext-decoration: none;
+				color: gray;	
+				text-decoration: none !important;
+				height: 35px;
+				border-bottom: 2px solid #90F7A6;
+				transition: .3s;
+
+
+			}
+			.itemp:hover, .itemp:link, .itemp:active, .itemp:visited{
+				color: #01695f !important;
+				
+    			
+			}
+			.muro{
+				display: flex;
+				justify-content: space-around;
+			}
+			.conmuro{
+				width: 100%;
+			}
+
+			input{
+				padding-left: 10px;
+				width: 300px !important;
+				margin-bottom: 30px !important;
+			}
+			.continuar{
+				border: none;
+			    border-radius: 3px;
+			    color: white !important;
+				background: #00D000;
+				width: 150px !important;
+				height: 30px;
+				margin: 35px 0; 
+				cursor: pointer;
+			}
+			#controlfix{
+				position: fixed;
+				right: 20px;
+			}
+		.aparecer{
+
+
+			animation: aparece .3s forwards;
+
+			}
+
+			@keyframes aparece{
+
+
+				0%{
+					transform: translateY(20px);
+					opacity: 0;
+				}
+
+				100%{
+					transform: translateY(0px);
+					opacity: 1;
+				}
+			}		
+</style>
+		<div class="contForm">
+		
+				<div class="control">
+					<div class="volver">
+						<a id="volver" onclick="irLista();"> < Volver</a>	
+					</div>
+					<div class="muro" style="width: 80px; flex-direction: row-reverse;">
+					<div   class="borrarUser borrar" title="Eliminar"  uk-tooltip="pos: bottom" uk-toggle="target: #modal-eliminar"><span class="icon-bin"></span></div>
+					<div onclick="editar();" class="borrarUser borrar" title="Actualizar Perfil"  uk-tooltip="pos: bottom" ><span class="icon-loop2"></span></div>
+					</div>
+				</div>
+					<div class="muro" id="controlfix" style="width: 80px; flex-direction: row-reverse; visibility: hidden;">
+					<div   class="borrarUser borrar" title="Eliminar"  uk-tooltip="pos: bottom" uk-toggle="target: #modal-eliminar"><span class="icon-bin"></span></div>
+					<div onclick="editar();" class="borrarUser borrar" title="Actualizar Perfil"  uk-tooltip="pos: bottom" ><span class="icon-loop2"></span></div>
+					</div>
+
+
+				<div class="perfilhead uk-card-default uk-card-body ">
+					<div class="Perfilpics" >	
+						<img id="Perfilpic"  src=""> 
+					</div>
+					<div class="Userdetails ">
+						<h1 id="Username"> Nombre usuario </h1> <h3 id="job"> Profesión </h3>
+					</div>
+					
+				</div>
+
+				<div class="bloque">
+				<div class="perfilbloq uk-card-default uk-card-body uk-card-hover">
+					<div class="conmuro ">
+						<div class="muro">
+							<a class="itemp">Datos Personales</a>
+						</div>
+						<div class="datosp">
+						 	<input class="" id="idinput" ></input>
+							<input type="text" id="mailinput" class="form-control" placeholder="" disabled>
+							<input type="text" id="ubinput" class="form-control" placeholder="" disabled>
+							<input type="text" id="credinput" class="form-control" placeholder="" disabled>
+							<input onclick="editarUsuarioPerfil();" type="button" id="actualizarp" name="" value="Guardar cambios" class="continuar" style="display: none">
+						</div>
+
+					</div>
+				</div>
+				<div class="perfilbloq2 uk-card-default uk-card-body uk-card-hover">
+				
+				</div>
+				</div>
+		</div>
+	
+
+</div>
+
+
+
+
+
+
+<div class="ListaUsuarios" id="ListaUsuarios">
+	<style>
+			.agregar{
+				margin: 5px 0 10px 0;
+				display: flex;
+				text-decoration: none;
+				
+				
+			    
+			}
+			#irAgregar1{
+				
+				color: #019687;
+				display: flex;  align-items: center;
+				font-size: 18px;
+				transition: .2s;
+
+			}
+			#irAgregar1:hover{
+				text-decoration: none;
+				cursor: pointer;
+				color: #02665d;
+			}
+			input{
+				margin-left: 10px !important;
+			}
+			.userlist td{
+				padding: 0 !important;
+			}
+
+	</style>
+			
+
+	<div class="uk-overflow-auto ">
+		
+
+	
+
+
+		<table class="uk-table  uk-table-middle uk-table-divider uk-table-small" style="background: #F0F0F0; color: #085938; " id="Lista">
+			<thead>
+				<tr style="background: white;" class="uk-table-shrink">
+					<th class="thh ">Foto</th>
+					<th class="thh ">Nombre Usuario</th>
+					<th class="thh ">Correo electrónico</th>
+					<th class="thh ">Capital Invertido</th>
+					<th class="thh">Ubicación</th>
+					<th class="thh">Rentabilidad anual</th>
+					<th class="thh">Acciones</th>
+					<th class="display">ID</th>
+				</tr>	
+			</thead>
+			<tbody id="contenidoTable">
+				
+
+			</tbody>
+
+		</table>
+	</div>
+
+
+
+</div>
+
+
+<div class="AgregarUsuario" id="AgregarUsuario">
+	
+		<div class="paso1" id="paso1">
+		<style>
+			h1, h2, h3, h4, h5, p{
+				color: #888888 !important;
+			}
+			.paso1{
+				z-index: 1;
+			}
+			.contForm{
+				
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.control{
+
+			display:flex;
+			border-bottom: 1px solid #AAAAAA !important;
+			height: 40px;
+			margin-bottom: 40px;
+			margin-top: 5px;
+			width: 60%;
+			}
+
+
+			.creando{
+			    width: 100%;
+			    display: flex;
+			    margin-left: calc(50% - 165px);
+			   
+			    font-size: 24px;
+			    font-weight: 400;
+			   
+			}
+			
+			.Form{
+				background: white;
+				width: 60%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				border-radius: 5px;
+			}
+			
+			.botn{
+				height: 37px;
+				width: 400px !important;
+				margin: 15px 0;
+				border-radius: 5px;
+				
+				padding-left: 5px;
+			}
+			.continuar{
+				border: none;
+			    border-radius: 3px;
+			    color: white;
+				background: #00D000;
+				width: 95px;
+				height: 30px;
+				margin: 35px 0; 
+				cursor: pointer;
+			}
+			.fechaven{
+			 display: flex;
+   			 flex-wrap: wrap;
+   			 width: 400px;
+   			 justify-content: left;
+			}
+			.fechalabel{
+				width: 100%;
+			}
+			.fechav{
+				height: 37px;
+				width: 150px !important;
+				margin: 15px 15px 15px 0;
+				border-radius: 5px;
+				border: 1px solid #08504d;
+				padding-left: 5px;
+			}
+			
+			.infile{
+				
+				width: 100px;
+				height: 100px;
+				cursor: pointer;
+				border-radius: 50%;
+				background-image: url("assets/imagenes/fotodeperfil.jpg");
+			    background-position: center !important;
+			    background-size: cover !important;
+			    background-repeat: no-repeat !important;
+			}
+
+		</style>
+			
+			<div class="contForm">
+				<div class="control">
+					<div class="volver">
+
+						<a id="volver" onclick="irLista();"> < Volver</a>	
+					</div>
+					<div class="creando" style="color: #888888;">Creando Usuario</div>
+				</div>
+				
+				<div class="Form">
+					<h3>Datos Personales</h3>
+						<input type="" name="iduser" id="iduser" value="" style="display: none" />
+						<input type="" name="uimg" id="uimg" value="" style="display: none"/>
+						<div class="infile" id="imgperfil">
+							<input type="" class="infile"  style="opacity: 1;">
+						</div>
+					<p style="font-size: 10px; margin-top: 3px;">Añade una foto de perfil</p>
+					<input class="botn form-control" type="text" name="" placeholder="Nombre" id="Nombre">
+					<input class="botn form-control" type="text" name="" placeholder="Correo Electronico" id="Correo">
+					<input class="botn form-control" type="password" name="" placeholder="Constraseña" id="Contrasena">
+					<input class="botn form-control" type="text" name="" placeholder="Ubicación" id="Ubicacion">
+					
+					<h3>Datos Bancarios</h3>
+					<input class="botn form-control" type="text" name="" placeholder="Numero de tarjeta" id="tarjeta">
+					<div class="fechaven">
+					<label class="fechalabel "><h5>Fecha de vencimiento</h5></label>
+					<input class="fechav  form-control" type="number" name="" placeholder="MM" id="MM">
+					<input class="fechav  form-control" type="number" name="" placeholder="AA" id="AA">
+					</div>
+					<input class="botn  form-control" type="password" name="" placeholder="Codigo de seguridad" id="cod">
+					
+
+					<!--input type="button" id="irPaso2" name="" value="Crear usuario" class="continuar" onclick="Uagregado();"-->
+					<input type="button" id="irPaso2" name="" value="Crear usuario" class="continuar" onclick="userC();">
+
+				</div>
+			</div>
+		</div>
+
+
+		<script src="../assets/js/AjaxUpload.2.0.min.js" type="text/javascript"></script>
+	<!-- scrip para usaurios  -->
+
+		
+	
+
+</div>
+
+

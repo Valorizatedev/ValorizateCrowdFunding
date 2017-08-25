@@ -1,0 +1,325 @@
+
+<div class="miCuenta" id="miCuenta">
+
+
+<style>
+
+@media screen and (max-width:600px){	
+	#contenedorCuenta{
+		width: 100%;
+	}
+}
+
+#miCuenta{
+	width: 95%; 
+	height: 100%; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center;
+}
+
+
+#contenedorCuenta{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+	width: 500px;
+	height: 500px;	
+	align-items: center;
+	margin-top: 40px;	
+}
+
+
+#imgPerfil:hover #regPerfil2{
+opacity: .7 !important;
+}
+     #imgPerfil{
+        transform: scale(0.1,0.1);
+        /*opacity: 0;*/
+        transition: .3s;
+        /*display: none;*/
+        box-shadow: none !important;
+        width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		/*background: #02655c;*/
+		position: absolute;
+		z-index: 9;
+		cursor: pointer;
+	/*-webkit-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.3) !important;*/
+    /*-moz-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.3) !important;*/
+    /*box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.3) !important;*/
+
+	  background: #444;
+    }
+
+    #imgPerfil2{
+    	width: 100%;
+    	height: 100%;
+    	border-radius: 50%;
+    	transition: .3s;
+    	        background-size: cover !important;
+                background-repeat: no-repeat !important;
+                background-position: center !important;
+    }
+
+	#datosPerfil{
+	width: 100%;
+	height: auto;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	padding-top: 100px;
+	background: #f3f2f4;
+    clip-path: circle(0% at 50% 0);
+    border-radius: 2%;
+    transition: .3s;
+}
+
+.datosCont{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+.tx
+{
+   margin-right: 15px;
+   color: #444 !important;
+   text-align: right;
+   width: 80px;
+}
+.tx2{
+	text-align: right;
+	margin: 0 7px;
+   color: #444 !important;
+}
+.cambfoto{
+	color: white;
+	font-weight: 600;
+}
+.cambiarf{
+	position: absolute;
+	/*z-index: 10;*/
+    /*left: 20%;*/
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    opacity: 0;
+}
+.secciones{
+	color: #444 !important;
+	margin-left: 0 !important;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	/*background: rgba(153, 153, 153, 0.78);*/
+
+}
+.uk-subnav-pill>.uk-active>a {
+    background-color: rgba(1, 105, 95, 0.61) !important;
+    color: white !important;
+    border-radius: 3% !important;
+
+}
+.uk-subnav-pill>*>a:focus, .uk-subnav-pill>*>a:hover {
+    background-color: rgba(1, 105, 95, 0.61) !important;
+    color: white !important;
+}
+		.oopcion a{
+    color: #444 !important;
+    text-decoration: none !important;}
+    .botonForm{
+    	margin-bottom: 30px;
+    	/*margin-top: 30px;*/
+    	border: none;
+    	padding: 10px;
+    	cursor: pointer;
+    	background: #27AE61;
+    	color: white !important;
+   		border-radius: 3% ;
+
+    }
+
+
+    .uk-h2, h2 {
+    	margin-bottom: 40px !important;
+	}
+	.fechaven{
+		width: 50px;
+	}
+	.uk-offcanvas-overlay::before {
+    background: rgba(0,0,0,.5) !important;
+}
+
+.iconi {
+	font-size: 80px;
+	width: 100%;
+	text-align: center;
+	color: wheat;
+
+}
+.centrar{
+	text-align: center;
+	display: flex;
+    justify-content: center;
+}
+.columna{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.uniforme{
+	width: 150px;
+	margin-bottom: 20px;
+}
+.fondo{
+	background: #0f3b3d !important;
+}
+#identificador{
+	color: #444 !important;
+	padding: 0;
+	margin: 0 !important;
+	display: none;
+}
+#btnForm{
+        transform: scale(0.1,0.1);
+        opacity: 0;
+        display: none;
+        transition: .3s;
+}
+
+</style>
+
+	<div id="contenedorCuenta">
+
+	<div id="imgPerfil">
+			<div class="cambiarf" id="regPerfil2">
+				<span class="cambfoto"><span class="icon-camera" /> Cambiar Foto</span>
+			</div>
+
+			<div id="imgPerfil2" src=""></div> 
+	</div>
+				
+		<div id="datosPerfil">
+
+		<h2 id="nombrehtm">¡Mi nombre aquí!.</h2>
+
+		<ul class="uk-subnav uk-subnav-pill secciones" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+		    <li class="oopcion"><a href="#">Datos Personales</a></li>
+		    <li class="oopcion"><a href="#">Datos Financieros</a></li>
+		</ul>
+
+			<ul class="uk-switcher uk-margin">
+			    <li>
+			    		<div class="datosCont">
+							<p id="identificador"></p>
+						</div>
+
+						<div class="datosCont" style="display: none;">
+							<span class="tx">img:</span>
+							<input type="" id="uimg" value="" name="" style="padding-left: 7px;">
+						</div>
+
+
+			   			<div class="datosCont">
+							<span class="tx">Nombre:</span>
+							<input type="text" id="nameimput" value="" name="" style="padding-left: 7px;">
+						</div>
+
+						<div class="datosCont">
+							<span class="tx">Contraseña:</span>
+							<input type="password" id="idcontra" value="" name="" style="padding-left: 7px;">
+						</div>
+
+						<div class="datosCont">
+							<span class="tx">Correo:</span>
+							<input type="text" id="mailinput2" value="" name="" style="padding-left: 7px;">
+						</div>
+
+						<div class="datosCont">
+							<span class="tx">Ubicación:</span>
+							<input type="text" id="ubinput2" value="" name="" style="padding-left: 7px;">
+						</div>
+			    </li>
+
+			    <li>
+						<div class="datosCont">
+							<span class="tx">No. tarjeta:</span>
+							<input type="text" id="credinput2" value="" name="" style="padding-left: 7px;">
+						</div>
+						<div class="datosCont">
+							<span style="width: 100%; text-align: center; margin-bottom: 20px;" class="tx">Fecha vencimiento</span>
+							<span class="tx2">Año:</span>
+							<input class="fechaven" type="number" id="anoveninput" value="" name="" style="padding-left: 7px;">
+							<span class="tx2">Mes</span>
+							<input class="fechaven" type="number" id="mesveninput" value="" name="" style="padding-left: 7px;">
+						</div>
+						<div class="datosCont">
+							<span class="tx">Codigo:</span>
+							<input type="password" id="codigotaringput" value="" name="" style="padding-left: 7px;">
+						</div>
+			    </li>
+			</ul>
+		<div id="controlesPer">
+		<button class="botonForm " id="btnForm" uk-toggle="target: #offcanvas-flip" >Actualizar Perfil</button>
+		<!-- <button style="" id="goForm" uk-toggle="target: #offcanvas-flip" disabled="">Actualizar Perfil</button> -->
+
+
+			
+		</div>
+			
+
+		</div>
+
+<div class="uk-offcanvas-content">
+
+
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar centrar fondo">
+
+            <div class="centrar columna">
+
+            <span  class="icon-warning iconi"></span>
+            <p>Ingresa tu contraseña actual para realizar tus cambios</p>
+            <input class=" uniforme" type="password" name="" placeholder="Contraseña Actual" style="padding-left: 7px;">
+            <button id="contrActual" type="button" class="botonForm uniforme" onclick="editado();" >Finalizar</button>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+	</div>
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="miCuenta" id="misInveriones"  style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; font-size: 25px;" >
+<div>
+	Aún no tienes inversiones...
+</div>
+	
+</div>

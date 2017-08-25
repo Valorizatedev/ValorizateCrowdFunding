@@ -1,0 +1,1834 @@
+<div class="oportunidades" id="oportunidades">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+<style type="text/css">
+#oportunidades{
+	    margin-bottom: 50px;
+}
+html{
+	background: #e9e7ed;
+}
+body{
+	background: #e9e7ed;
+}
+p{
+	margin: 10px 0 !important;
+}
+            a, a:hover, a:link, a:active, a:visited{
+                color: white !important;
+                text-decoration: none !important;}
+	.like2{
+		background-image: url("http://www.valorizate.com.co/assets/images/corazon.png") !important;
+		cursor: pointer;
+		width: 100px;
+		height: 100px;
+	}
+
+.subcm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2.5px solid #27AE61;
+    
+    border-radius: 5px;
+    height: 38px;
+    top: 0px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0 30px;
+    list-style: none;
+    width: 180px;
+    cursor: pointer;
+    transition: .2s;
+    background: #27AE61;
+
+}
+
+
+.subcm:hover{
+    
+}
+.subcm a:hover{
+
+     abackground:#27AE61;
+   
+     color: white ;
+     afont-size: 19px;
+     
+     transition: 0.3s;
+
+
+}
+	.like2.is-liked{
+
+		animation-name: like;
+		animation-duration: 1s;
+		
+		animation-timing-function: steps(28);
+		
+		/*background-position: -2800px 0;*/
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes like{
+		0%{
+			/*transform: translateX(0px);*/
+			background-position: 0 0;
+		}
+		100%{
+			background-position: right;
+			/*transform: translateX(200px);*/
+		}
+	}
+
+	.contemadre{
+		width: 100%;
+		/*height: 700px;*/
+		/*padding: 55px 15px 55px 15px;*/
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 200px;
+		z-index: 1;
+		/*border: 1px solid black;*/
+	}
+	.lista{
+		width: 75%;
+		    border-radius: 5px !important;
+		/*border: 1px solid black;	*/
+		margin-top: 15px;
+		margin-left: 50px;
+		margin-bottom: 15px;
+		margin-right: 15px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.filtros{
+		width: 25%;
+		/*border: 1px solid black;	*/
+		margin-top: 15px;
+		margin-right: 50px;
+		margin-bottom: 15px;
+		margin-left: 15px;
+		display: none;
+	}
+
+	.carta{
+		width: 100%;
+		height: 270px;
+		background: white;
+		transition: .3s;	
+		
+		display: flex;
+		border-radius: 3px;
+	}
+
+	.cdias{
+		/*border: 1px solid black;*/
+		width: 100%;
+		height: 8%;
+		display: flex;
+		justify-content: flex-end;	
+		transition: .2s;
+	}
+	.dias{
+		color: red;
+		padding: 5px 15px 0 0;
+		font-size: 13px;
+		transition: .2s;
+	}
+	.cnombreProyecto{
+		/*border: 1px solid black;*/	
+		width: 100%;
+		height: 22%;	
+	}
+	.nombreProyecto{
+		padding: 0 15px;
+		font-size: 26px;
+		color: #868686;
+	}
+	.cutilidad{
+		/*border: 1px solid black;*/
+		width: 100%;
+		height: 40%;	
+	}
+	.utilidad{
+		margin: 0 25px;
+		border: 1px solid #e9e7ed;
+		height: 100%;
+		display: flex;
+		justify-content: space-around;
+		border-radius: 3px;
+	}
+
+	.contprogreso{
+	    width: 75%;
+	    height: 100%;
+	    margin: 0 10px;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+
+	}
+	.cprogreso{
+		width: 100%;
+		height: 30%;	
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+	}
+	.progreso{
+		
+		width: 100%;
+		height: 10px;
+		background: #DDDDDD;
+		border-radius: 3px;
+	}
+
+	.progresado{
+		border-radius: 3px;
+		width: 37.5%;
+		height: inherit;
+		background: rgba(9,235,163,1);
+		background: -moz-linear-gradient(left, rgba(9,235,163,1) 0%, rgba(48,173,187,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(9,235,163,1)), color-stop(100%, rgba(48,173,187,1)));
+		background: -webkit-linear-gradient(left, rgba(9,235,163,1) 0%, rgba(48,173,187,1) 100%);
+		background: -o-linear-gradient(left, rgba(9,235,163,1) 0%, rgba(48,173,187,1) 100%);
+		background: -ms-linear-gradient(left, rgba(9,235,163,1) 0%, rgba(48,173,187,1) 100%);
+		background: linear-gradient(to right, rgba(9,235,163,1) 0%, rgba(48,173,187,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09eba3', endColorstr='#30adbb', GradientType=1 );
+	}
+	.picProject{
+		    border-top-right-radius: 5px;
+		    border-bottom-right-radius: 5px;
+		width: 40%;
+		background: #F2F2FD;
+		/*background-image: url("https://pbs.twimg.com/profile_images/831544618097451008/7xJOQ0Xg.jpg");
+		background-image: url("https://ds.valorizate.com.co/frontend/assets/images/hol.jpeg");*/
+		background-repeat: no-repeat;
+		background-position: center;
+    	 background-size: cover;
+	}
+	.infoProject{
+		width: 60%;
+	}
+	.plusvalia, .rentabilidad, {
+
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	p{
+		margin: 15px 0;
+	}
+	.rent, .plus{
+		text-align: center;
+		font-size: 40px;
+		color: #A9D758;
+		/*line-height: 40px;*/
+	}
+	.plus{
+		color: #999999 !important;
+		margin-top: 0 !important;
+		line-height: 40px;
+	}
+	.tituloc{
+		font-size: 10px;
+		color: #999999;
+	}
+	.titulod{
+		height: 0px;
+		font-size: 12px;
+		color: #999999;
+		margin-bottom: 0 !important;
+		margin-top: 15px !important;
+		position: absolute;
+	}
+	.inicio{
+		width: 20px;
+		height: 18px;
+	}
+	.final{
+		width: 23px;
+		height: 21px;
+	}
+	.users{
+		color: #30ADBB;
+	}
+	.alcanzado{
+		color: #30ADBB;
+		margin-left: 5px;
+	}
+	.tasa{
+		color: #A5D650;
+	}
+	.meta{
+		color: #30ADBB;
+	}
+	.users, .alcanzado, .tasa, .meta{
+		font-size: 14px;
+		font-weight: bold;
+		font-family: 'Roboto', sans-serif;
+	}
+	.otrafont{
+		font-family: 'Roboto', sans-serif;
+	}
+	.carta:hover .dias{
+		opacity: 0 !important;
+		transform: translateX(20px) !important;
+	}
+	.contfinal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12px;
+	}
+	.contpic{
+		border-top-right-radius: 5px !important;
+		border-bottom-right-radius: 5px !important;
+		transition: .4s;
+		/*background: rgba(0, 0, 0, 0.1) !important;*/
+		/*border: 2px solid black;*/
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+        position: absolute;
+    top: 0px;
+    background: black;	
+
+/*background: rgba(0,0,0,0.59);
+background: -moz-linear-gradient(top, rgba(0,0,0,0.59) 0%, rgba(0,0,0,0.59) 14%, rgba(0,0,0,0) 36%, rgba(0,0,0,0) 97%, rgba(0,0,0,0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.59)), color-stop(14%, rgba(0,0,0,0.59)), color-stop(36%, rgba(0,0,0,0)), color-stop(97%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.59) 0%, rgba(0,0,0,0.59) 14%, rgba(0,0,0,0) 36%, rgba(0,0,0,0) 97%, rgba(0,0,0,0) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0.59) 0%, rgba(0,0,0,0.59) 14%, rgba(0,0,0,0) 36%, rgba(0,0,0,0) 97%, rgba(0,0,0,0) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0.59) 0%, rgba(0,0,0,0.59) 14%, rgba(0,0,0,0) 36%, rgba(0,0,0,0) 97%, rgba(0,0,0,0) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0.59) 0%, rgba(0,0,0,0.59) 14%, rgba(0,0,0,0) 36%, rgba(0,0,0,0) 97%, rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+*/
+opacity: 0;
+	}
+	.carta:hover .contpic{
+		opacity: 1;
+
+		/*margin:4px;*/
+	}
+		.verMas{
+		opacity: 0;
+		margin-bottom: 10px;
+		/*transform: scale(0.1,0.1);*/
+		transition: .3s;
+	}
+
+	.carta:hover .verMas{
+		opacity: 1;
+		/*transform: scale(1,1);*/
+	}
+
+		.carta:hover .controles{
+		opacity: 1;
+	}
+
+	.carta:hover #fecha{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
+/*	.carta:hover #relojito{
+		color: #FF5555 !important;
+	}*/
+	.favoritos{
+		position: relative;
+		    display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+
+	.ingresarPer{
+		width: 100px !important;
+		height: 150px !important;
+		border-radius: 50%;
+		border: 1px solid white;
+	}
+	#regPerfil{
+		transform: scale(0.1,0.1);
+	    opacity: 0;
+	    transition: .2s;
+	    display: none;
+	    -webkit-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    -moz-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+	}
+	.cuerpomodal{
+	background: transparent !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 400px;
+    padding: 0;
+	}
+	.infile{
+				
+				width: 100px;
+				height: 100px;
+				cursor: pointer;
+				border-radius: 50%;
+				background-image: url("admin/assets/imagenes/fotodeperfil.jpg");
+			    background-position: center !important;
+			    background-size: cover !important;
+			    background-repeat: no-repeat !important;
+			}
+
+#mes{
+	position: absolute;
+    bottom: 90px;
+    width: 45px;
+    text-align: center;
+}
+.controles{
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-size: 20px !important;
+	width: 100%;
+	/*padding: 0 10px !important;*/
+	opacity: 0;
+transition: .2s;
+}
+.tiempo{
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+			#fecha{
+			margin-top: 8px;
+			opacity: 0;
+			transform: translateX(-90px);
+			transition: .3s;
+			}
+			#fecha div, #fecha span{
+				font-size: 17px !important;
+				color: #61DC95	;	
+
+			}
+			.fechalabel {
+				font-size: 11px !important;
+				margin: 0 !important;
+				color: #61DC95 !important;
+				
+			}
+			.cuentaR{
+			    height: 20px;
+   				line-height: 20px;
+				padding-left: 0px !important;
+			}
+			.primerac{
+				padding-right: 5px !important;
+				padding-left: 0 !important;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+			}
+
+
+.contenedor-slider {
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 400%;
+}
+
+.slider__section {
+  width: 100%;
+}
+
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 270px;
+}
+
+.btn-prev, .btn-next {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.btn-prev:hover, .btn-next:hover {
+  background: white;
+}
+
+.btn-prev {
+  left: 10px;
+  z-index: 999;
+}
+
+.btn-next {
+  right: 10px;
+  z-index: 999;
+}
+#saberMas{
+	position: absolute !important;
+	top: 45% !important;
+    left: calc(50% - 120px) !important;
+}
+#masaber{
+	display: none;
+}
+@media screen and (max-width:863px){
+    .lista{
+        width: 100%;
+
+    }
+
+    .nombreProyecto {
+
+    text-align: center;
+    font-size: 19px;
+}
+}
+@media screen and (max-width:1024px){
+
+    .lista{
+        width: 100%;
+   		margin: 0;
+    }
+
+}
+
+@media screen and (max-width:600px){	
+/*	#PoliCont{
+		-webkit-clip-path: polygon(50% 0%, 99% 2%, 100% 100%, 0 100%, 0 2%);
+		clip-path: polygon(50% 0%, 99% 2%, 100% 100%, 0 100%, 0 2%);
+	}
+*/
+	#masaber{
+	display: initial;
+	    text-align: center;
+    display: flex;
+}
+
+
+    .lista{
+        width: 100%;
+   		margin: 0;
+   		    display: flex;
+    align-items: center;
+    }
+    .carta {
+    width: 90%;
+    height: 520px;
+    background: white;
+    transition: .3s;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 3px;
+    align-items: center;
+    margin-top: 70px;
+}
+.picProject{
+width: 100%;
+}
+.cdias{
+	display: none;
+}
+    .nombreProyecto {
+   width: 100%;
+   font-size: 18px;
+   padding:0;
+   margin:20px 0;
+}
+.infoProject {
+    width: 100%;
+}
+
+.utilidad{
+	margin: 10px;
+}
+.plusvalia{
+	position: relative;
+}
+#mes {
+    position: absolute;
+    bottom: 10px;
+    width: 45px;
+    text-align: center;
+}
+.cprogreso{
+	margin-bottom: 15px;
+}
+.seccion1 {
+    margin-bottom: 150px;
+    height: 600px;
+}
+
+.varMas{
+	opacity: 1;
+}
+#fecha{
+	opacity: 1;
+}
+#saberMas{
+	position: absolute !important;
+	top: 45% !important;
+    left: calc(50% - 120px) !important;
+}
+.contpic{
+	opacity: 1;
+}
+
+#fecha{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
+}
+
+@media screen and (max-width:400px){	
+
+	#saberMas{
+		display: none;
+	}
+	.carta{
+		width: 100%;
+	}
+
+}
+
+
+</style>
+
+
+	<div class="contemadre" id="contemadre">
+
+		              
+
+
+
+
+	
+
+		<div class="lista">
+			<div class="carta uk-card-hover" id="carta" >
+				<div class="infoProject">
+					<div class="cdias"><div class="dias"><span class="icon-clock "></span><span style="color: gray;"> 35 Días</span> </div></div>
+					<div class="cnombreProyecto"><div class="nombreProyecto">Proyecto de inversión Plan Parcial 5 Tuluá</div></div>
+					<div class="cutilidad"><div class="utilidad">
+
+						<div class="rentabilidad"><p class="tituloc">RENTABILIDAD TOTAL</p><p class="rent">34% </p></div>
+					
+						<div class="plusvalia"><p class="tituloc">REVALORIZACÍÓN ZONA</p> <p class="rent">17%</p></div>
+
+						<div class="plusvalia"><p class="tituloc">RETORNO</p> <p class="plus">24<p id="mes" class="tituloc">MESES</p></p></div>
+						
+					</div></div>
+					<div class="cprogreso"><img src="assets/images/usumul.png" class="inicio"><div class="contprogreso"><div class="users">20<span class="icon-user"></span> </div> <div class="progreso"><div class="progresado"></div></div><div class="tasa" title="50 Millones (17 k Dolares)" uk-tooltip="pos: bottom">37.5% <span class="alcanzado">(50 M)</span></div></div> <div class="contfinal"> <img src="assets/images/exieq.png" class="final"><span class="meta">160 M</span> </div> </div>
+					<div style="width: 100%; display: flex; justify-content: center; margin-bottom: 15px;">					
+					<a id="masaber" href="planparcial5.html" class="subcm"onclick="sdetalleProyecto();" >Quiero saber más</a>
+					</div>
+
+				</div>
+
+				<div class="picProject" id="picProject">
+
+					  <div id="contenedor-slider" class="contenedor-slider">
+
+					 <div id="slider" class="slider">
+					  <section class="slider__section"><iframe width=100% height=100% src="https://www.youtube.com/embed/kc-fTPQI0cY?rel=0&autoplay=1" frameborder="0" allowfullscreen class="slider__img"></iframe ></section>
+					    <section class="slider__section"><img src="http://welltechnically.com/wp-content/uploads/2013/09/android-widescreen-wallpaper-14165-hd-wallpapers-700x300.jpg" class="slider__img"></section>
+					   
+					    <section class="slider__section"><img src="http://welltechnically.com/wp-content/uploads/2013/09/android-widescreen-wallpaper-14165-hd-wallpapers-700x300.jpg" class="slider__img"></section>
+					    <section class="slider__section"><img src="http://youghaltennisclub.ie/wp-content/uploads/2014/06/Tennis-Wallpaper-High-Definition-700x300.jpg" class="slider__img"></section>
+					  </div>
+					  <div id="btn-prev" class="btn-prev">&#60;</div>
+					  <div id="btn-next" class="btn-next">&#62;</div>
+
+
+
+				<div class="contpic">
+
+				<div id="fecha" class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: 2017-08-06T18:58:50+00:00" title="la oportunidad finaliza en: " uk-tooltip="pos: top">
+						<div class="primerac" style="padding-right: 15px !important;"><span id="relojito" class="icon-clock"></div>
+					    <div class="primerac">
+					        <div class="uk-countdown-number uk-countdown-days cuentaR"></div>
+					        <h5 class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s fechalabel">Días</h5>
+					    </div>
+					    <div class="uk-countdown-separator cuentaR">:</div>
+					    <div class="primerac">
+					        <div class="uk-countdown-number uk-countdown-hours cuentaR"></div>
+					        <h5 class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s fechalabel">Horas</h5>
+					    </div>
+					    <div class="uk-countdown-separator cuentaR">:</div>
+					    <div class="primerac">
+					        <div class="uk-countdown-number uk-countdown-minutes cuentaR"></div>
+					        <h5 class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s fechalabel">Minutos</h5>
+					    </div>
+					    <div class="uk-countdown-separator cuentaR">:</div>
+					    <div class="primerac">
+					        <div class="uk-countdown-number uk-countdown-seconds cuentaR"></div>
+					        <h5 class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s fechalabel">Segundos</h5>
+					    </div>
+					</div>
+
+					<!-- <div class="controles"></div> -->
+
+					
+				</div>
+				<a id="saberMas" href="planparcial5.html" class="subcm verMas"onclick="sdetalleProyecto();" >Quiero saber más</a>
+
+
+
+				</div>
+
+
+					
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="filtros">
+			
+		</div>
+
+	</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="detalleInversion" id="detalleInversion">
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+<a href="#cartoo">
+<div id="mapaUsoSuelo" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body contimg" style="background: transparent;">
+        <div class="contimg">
+        <img src="http://www.valorizate.com.co/oportunidades/pp5/usosuelo.jpg" class="backgroundimg">
+            <!-- <div class="backgroundimg"></div> -->
+        </div>
+    </div>
+</div>
+</a>
+
+<div id="mapaVial2" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body contimg" style="background: transparent;">
+        <div class="contimg">
+        <img src="http://www.valorizate.com.co/oportunidades/pp5/Mallavial.jpg" class="backgroundimg">
+            <!-- <div class="backgroundimg"></div> -->
+        </div>
+    </div>
+</div>
+
+
+
+
+		<style type="text/css">
+
+			.ingresarPer{
+		width: 100px !important;
+		height: 150px !important;
+		border-radius: 50%;
+		border: 1px solid white;
+	}
+	#regPerfil{
+		transform: scale(0.1,0.1);
+	    opacity: 0;
+	    transition: .2s;
+	    display: none;
+	    -webkit-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    -moz-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+	}
+	.cuerpomodal{
+	background: transparent !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 400px;
+    padding: 0;
+	}
+	.infile{
+				
+				width: 100px;
+				height: 100px;
+				cursor: pointer;
+				border-radius: 50%;
+				background-image: url("admin/assets/imagenes/fotodeperfil.jpg");
+			    background-position: center !important;
+			    background-size: cover !important;
+			    background-repeat: no-repeat !important;
+			}
+			.contimg{
+		width: 988px !important;
+		height: 619px !important;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+			}
+			.contimg2{
+				background: rgba(0, 0, 0, 0.56) !important;
+			}
+	.backgroundimg{
+		width: 988px;
+		height: 619px;
+				background-image: url('http://www.valorizate.com.co/oportunidades/pp5/usosuelo.jpg');
+				background-position: center !important;
+				background-repeat: no-repeat !important;
+			    background-size: cover !important;
+
+	}
+
+		
+			html{
+				/*background: #e9e7ed;*/
+				/*background: #F3F2F4;*/
+			}
+			body{
+				/*background: #e9e7ed;*/
+				/*background: #F3F2F4;*/
+			}
+
+	a, a:hover, a:link, a:active, a:visited{
+    color: white !important;
+    text-decoration: none !important;}
+    
+	#progresado{
+		width: 0%;
+		transition: 1.2s;
+	}
+		.abrirmenu{
+		border-top-right-radius: 7px;
+	}
+	.subcm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2.5px solid #27AE61;
+    
+    border-radius: 5px;
+    height: 38px;
+    top: 0px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 0 30px;
+    list-style: none;
+    width: 180px;
+    cursor: pointer;
+    transition: .2s;
+    background: #27AE61;
+
+}
+
+
+.subcm:hover{
+    
+}
+.subcm a:hover{
+
+     abackground:#27AE61;
+   
+     color: white ;
+     afont-size: 19px;
+     
+     transition: 0.3s;
+
+
+}
+
+				.cprogreso{
+		width: calc(100% - 20px);
+		height: 30%;	
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	margin: 0 10px;
+	}
+
+	.inicio{
+		width: 20px;
+		height: 18px;
+	}
+	.contprogreso{
+	    width: 75%;
+	    height: 100%;
+	    margin: 0 4px;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+
+	}
+	.recaudado{
+		color: #30ADBB;
+		font-size: 20px !important;
+		margin-bottom: 10px;
+	}
+	.progreso{
+		
+		width: 100%;
+		height: 10px;
+		background: #DDDDDD;
+		border-radius: 3px;
+	}
+	.progresado{
+		border-radius: 3px;
+		height: inherit;
+		transition: .3s;
+		background: rgba(9,235,163,1);
+		background: -moz-linear-gradient(left, rgba(9,235,163,1) 0%, rgba(48,173,187,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(9,235,163,1)), color-stop(100%, rgba(48,173,187,1)));
+		background: -webkit-linear-gradient(left, rgba(9,235,163,1) 0%, rgba(48,173,187,1) 100%);
+		background: -o-linear-gradient(left, rgba(9,235,163,1) 0%, rgba(48,173,187,1) 100%);
+		background: -ms-linear-gradient(left, rgba(9,235,163,1) 0%, rgba(48,173,187,1) 100%);
+		background: linear-gradient(to right, rgba(9,235,163,1) 0%, rgba(48,173,187,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#09eba3', endColorstr='#30adbb', GradientType=1 );
+	}
+	.alcanzado{
+		color: #30ADBB;
+		margin-left: 5px;
+	}
+	.tasa{
+		color: #A5D650;
+		margin-top: 10px;
+	}
+	.meta{
+		color: #30ADBB;
+		width: 38px;
+
+	}
+	.recaudado, .alcanzado, .tasa, .meta{
+		font-size: 14px;
+		font-weight: bold;
+		font-family: 'Roboto', sans-serif;
+	}
+	.otrafont{
+		font-family: 'Roboto', sans-serif;
+	}
+	.contfinal{
+		display: flex;
+		flex-direction: column;
+		padding-top: 12px;
+		align-items: center;
+	}
+	.final{
+		width: 23px;
+		height: 21px;
+	}
+			.contemadre{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			background: #F3F2F4;
+			justify-content: center;
+			transition: .3s;
+			position: relative;
+			z-index: 1;
+
+			}
+			.analisisInv{
+				width: 75%;
+				/*border: 1px solid black;*/
+				margin-top: 15px;
+				margin-left: 50px;
+				margin-bottom: 15px;
+				margin-right: 5px;
+			}
+			.panelInv{
+				width: 25%;
+				margin-top: 15px;
+				margin-right: 50px;
+				margin-bottom: 15px;
+				margin-left: 5px;
+				position: relative;
+			}
+			.conteHead{
+				display: flex;
+				flex-direction: column;
+			}
+			.titu{
+				text-align: center;
+				font-size: 26px;
+				margin-bottom: 5px;
+			}
+			#imgProyecto{
+				height: 500px;
+				background-position: center;
+			    background-size: cover !important;
+			    background-repeat: no-repeat !important;
+				/*border: 1px solid black;*/
+			}
+			
+			#docuPlanos, #docuPlanos2, #docuPlanos3{
+				/*height: 500px;*/
+				background-position: center;
+				background-size: 800px 600px;
+			    /*background-size: cover;*/
+			    background-repeat: no-repeat;
+				/*border: 1px solid black;*/
+			}
+			.contAnali{
+				border-bottom: 1px solid #EBEAEE;
+				/*border: 1px solid black;*/
+				width: 100%;
+				margin-bottom: 20px;
+				/*padding-top: 40px;*/
+			}
+			.tituseccion{
+				width: 100%;
+				text-align: center;
+
+				
+			}
+			#tabs, .contAnali{
+				/*height: 60px;*/
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				top: 0;
+				background: #f3f2f4;
+				/*transition: 1s;*/
+			}
+			#tabs{
+				justify-content: space-around !important;
+				height: 50px !important;
+				margin: 0 !important;
+				z-index: 8;
+			}
+			.sombra{
+-webkit-box-shadow: 2px 2px 8px -3px rgba(0,0,0,0.03);
+-moz-box-shadow: 2px 2px 8px -3px rgba(0,0,0,0.03);
+box-shadow: 2px 2px 8px -3px rgba(0,0,0,0.03);
+			}
+			#tabs span{
+				margin-right: 15px;
+				cursor: pointer;	
+			}
+			#texAnali{
+				display: flex;
+				justify-content: left;
+				height: auto;
+			}
+			#audioAnali{
+				height: 60px;
+			}
+/*			#mapaAnali{
+				height: 550px;
+				background-repeat: no-repeat;
+				background-position: center;
+    	 		background-size: cover;
+			}*/
+			#mapaVial, #mapaAnali{
+				height: 250px;
+				width: 350px !important;
+				background-repeat: no-repeat;
+				background-position: center;
+    	 		background-size: cover;
+			}
+			.cartografia{
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				justify-content: center;
+				transition: .2s;
+				width: 350px;
+				margin: 10px 20px;
+			}
+			.contcartografia{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			#estadRenta{
+				/*height: 400px;*/
+			}
+			#estadPlusva{
+				height: 500px;
+			}
+			#documentacion{
+				height: 60px;
+			}
+			#docuPlanos{
+				height: 600px;
+			}
+			#docuPlanos2, #docuPlanos3{
+				height: 1100px;
+			}
+			#Permisos{
+				height: 60px;
+			}
+			#permisosDoc{
+				height: 100px;
+			}
+			.coolor{
+				color: rgb(0, 252, 108) !important;
+			}
+			#analis, #estadis, #docs{
+				color: #666 ;
+				transition: .3s;
+			}
+			.alado{
+				width: 20%;
+			}
+			.central{
+				width: 60%;
+				text-align: center;
+			}
+			.botoon{
+				color: #666 ;
+				margin: 0 !important;
+				transition: .3s;
+			}
+			.botoon:hover{
+				color:#C1BCC7;
+			}
+			.nuevoc{
+			    margin: 0 50px 0 67px !important;
+				width: 40px !important;
+				display: flex;
+			    justify-content: center;
+			    text-align: center;
+			    padding-left: 11px;
+			}
+
+			.desIzquierda{
+			transform: translateX(-50px);
+			/*transform: translateX(0px);*/
+
+			}
+			#derecha{
+				transition: .2s;
+				opacity: 0;
+			}
+			#izquierda{
+
+				transition: .2s;
+				opacity: 0;
+			}
+			.cosa{
+				    margin-left: 10px;
+			}
+			.refer{
+				height: 240px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				text-align: left;	
+				border-bottom: 1px solid #EBEAEE;
+			}
+			.nuevoboton{
+				height: 35px;
+				width: 60%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 15px;
+				border: 1px solid rgb(0, 252, 108);
+				border-radius: 4px;
+				transition: .15s;
+				cursor: pointer;
+			}
+			.nuevoboton:hover{
+				border: 1px solid #27AE61;
+				background: #27AE61;
+				color: white;
+			}
+			#fecha div, #fecha span{
+				font-size: 39px !important;
+				padding-left: 3px !important;
+				color: #f85032	;	
+
+			}
+			.fechalabel {
+				font-size: 13px !important;
+				margin: 0 !important;
+				color: #ff6a00 !important;
+				
+			}
+			.oporOut{
+				height: 200px;
+				width: 100%;
+				border: .1px solid #EBEAEE;
+				display: flex;
+				/*margin-top: 20px;*/
+			    justify-content: center;
+			    flex-direction: column;
+			    align-items: center;
+			    border-radius: 4px;
+			    top: 0;
+			}
+			.panelInv1{
+		    height: 500px;
+		    display: flex;
+		    /* margin-top: 20px; */
+		    flex-direction: column;
+		    justify-content: space-around;
+		    flex-wrap: wrap;
+		    margin-bottom: 43px;
+			}
+			.redes span, .redes{
+					font-size: 17px;
+				display: flex;
+				justify-content: center;
+			}
+			.redes span{
+				margin-left: 15px;
+			}
+			.uk-breadcrumb{
+			margin: 0 !important;
+		    position: absolute !important;
+		    left: 50px !important;
+			}
+			.cpm{
+			display: flex;
+    		justify-content: center;
+			}
+			.panelInv2{
+				width: 100%;
+				height: 600px;
+				/*border: .1px solid #EBEAEE;*/
+				top: 0;
+				z-index: 9;
+				/*position: absolute !important;*/
+			}
+			#meta{
+				width: 100%;
+				height: 60px;
+				/*background: #005a55;*/
+				border: .1px solid #EBEAEE;
+				display: flex;
+				flex-direction: column;
+				transition: .2s;
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+			}
+			#rentInv{
+				width: 100%;
+				border: .1px solid #EBEAEE;
+				height: 150px;
+				display: flex;
+			}
+			#rentInv span{
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				font-size: 55px;
+				margin-top: 0 !important;
+				margin-bottom: 18px !important;
+			}
+			#progresoBar{
+		    width: 100%;
+		    border: .1px solid #EBEAEE;
+		    height: 200px;
+		    display: flex;
+		    flex-wrap: wrap;
+		    align-items: flex-start;
+		    padding-top: 7px;
+
+			}
+			#paInv{
+				padding-top: 25px;
+				width: 100%;
+				border: .1px solid #EBEAEE;
+				height: 160px;
+				display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			}
+			#rentab{
+				height: 100%;
+				border: .1px solid #EBEAEE;
+				width: 50%;
+			}
+			#people{
+				height: 100%;
+				width: 50%;
+			}
+			.fuenteNumber{
+				font-family: 'Roboto Slab', serif;
+			}
+			.LL{
+				cursor: pointer;
+			}
+			.estado{
+				width: 100%;
+				text-align: center;
+				display: flex;
+   				flex-direction: column;
+			}
+			.quieroInv{
+				width: 100%;
+				height: 35px;
+				border-radius: 5px;
+			}
+			.uk-margin{
+				display: flex;
+				justify-content: center;
+			}
+			.icon-coin-dollar:before {
+			    content: "\e93b";
+			    color: #666;
+			}
+			.nuevod{
+			    margin: 0 20px 0 20px !important;
+				width: 150px !important;
+				display: flex;
+			    justify-content: center;
+			    text-align: center;
+			}
+			#PeopleAqui2{
+			margin-right: 50%;
+    		transition: .4s;
+    		color: #666;
+			}
+			#PeopleAqui{
+				opacity: 0;
+				transition: .3s;
+				transform: scale(0.1,0.1);
+			}
+			#RentAqui{
+				opacity: 0;
+				transition: .3s;
+				transform: scale(0.1,0.1);
+			}
+			#RentAqui2{
+			margin-right: 50%;
+    		transition: .4s;
+    		color: #666;
+			}
+			.nuevod:hover .iconos{
+			font-size: 18px;
+			opacity: 1;
+			margin-left: 10px;
+			}
+			.iconos{
+			opacity: 0;
+			margin-left: 3px;
+			font-size: 1px;
+			transition: .3s;
+			}
+			#peerfil{
+				transition: .2s;
+				margin: 0 !important;
+				/*display: none;*/
+				opacity: 0;
+				width: 20%;
+				display: flex;
+				justify-content: flex-end;
+			}
+			#fotopeer{
+				/*background: red;*/
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+				border: 1px solid rgb(0, 252, 108) !important;
+}
+.rr{
+	    top: 0;
+    position: absolute;
+    font-size: 12px;
+    background: transparent !important;
+}
+.r1{
+	background: transparent !important;
+	font-size: 12px !important;
+}
+.negrita{
+    font-weight: bold;
+}
+/*#myPieChart rect{
+	fill: transparent;
+}*/
+
+#estadis2{
+	display: none;	
+}
+#analis2{
+	display: none;	
+}
+#docs2{
+	display: none;	
+}
+
+
+
+
+#meta2{
+	height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#meta2>span{
+font-size: 20px !important;
+}
+
+
+@media screen and (max-width:600px){	
+
+.oporOut {
+    height: 120px;
+}
+
+#rentInv {
+    height: 100px;
+}
+
+#rentInv span {
+    margin: 0 !important;
+}
+
+#docuPlanos {
+    height: 400px;
+    width: 100%;
+}
+
+	#docuPlanos2, #docuPlanos3 {
+	width: 100% !important;
+    height: 400px !important;
+}
+
+#mapaVial, #mapaAnali {
+    width: 100% !important;
+
+}
+
+.panelInv{
+	display: none;
+}
+.analisisInv{
+	width: 100% !important;
+	margin: 10px 5px;
+}
+#tabs{
+	width: 100% !important;
+}
+#estadis{
+	display: none;	
+}
+#analis{
+	display: none;	
+}
+#docs{
+	display: none;	
+}
+.panelInv1{
+	height: auto !important;
+	display: initial !important;
+}
+.panelInv2{
+	display: initial !important;
+}
+#descAnali{
+	     padding: 50px 10px !important; 
+}
+
+
+#estadis2{
+	display: initial;
+	color: 	#666;
+	font-size: 18px;	
+}
+#analis2{
+	display: initial;
+	color: 	#666;
+	font-size: 18px;	
+}
+#docs2{
+	display: initial;
+	color: 	#666;
+	font-size: 18px;
+}
+#progresado2{
+transition: .3s;
+}
+
+}
+
+/*}
+
+
+
+			}*/
+		</style>
+
+	<div class="contemadre" id="contemadre">
+
+
+
+
+
+
+
+		<div class="analisisInv">
+
+			<div class="conteHead">
+
+				<div class="cpm">
+
+				
+					<span class="titu">Proyecto de inversión Plan Parcial 5 Tuluá (zona de expansión)</span>
+					
+				</div>
+			</div>
+
+			<div id="imgProyecto" class="contAnali">
+				<iframe width=100% height=100% src="https://www.youtube.com/embed/kc-fTPQI0cY?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+
+
+			<div id="tabs" class="contAnali">
+
+			<div id="izquierda" class="alado desIzquierda"><a href=""><span class="botoon">< Volver</span></a></div>
+			<div class="central">
+			<a href="#audioAnali"><span  id="analis" class="coolor" >Análisis Inversión</span></a>
+			<a href="#estadRenta"><span id="estadis">Estadísticas</span></a>
+			<a  href="#documentacion"><span id="docs">Documentación</span></a>
+			
+			<a href="#audioAnali"><span  id="analis2" class="coolor icon-pencil" ></span></a>
+			<a href="#estadRenta"><span id="estadis2" class="icon-stats-dots" ></span></a>
+			<a  href="#documentacion"><span id="docs2" class="icon-folder-open" ></span></a>
+			</div>
+			<!-- audioAnali -->
+			<!-- estadRenta -->
+			<!-- documentacion -->
+
+			<div class="alado" id="derecha" onclick="conectarme();">
+			<div class="subcm tocar nuevoc" title="Conectarme YA!" uk-tooltip="pos: bottom" uk-toggle="target: #modal-close-default"><a href="#audioAnali"><span class="icon-lock cosa"></span></a></div>
+			</div>
+
+<!-- 			<div  id="peerfil" onclick="conectarme();" title="nombre usuario" uk-tooltip="pos: bottom">
+			<div id="fotopeer"></div>
+			</div> -->
+
+
+			</div>
+
+
+
+
+
+
+
+				<div id="audioAnali" class="contAnali display" style="opacity: 1;">
+					Audio-análisis Inversión
+				</div>
+
+				<div class="panelInv1" style="display: none;">	
+				<div class="oporOut">
+				Esta oportunidad finaliza en:
+					<div id="fecha" class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: 2017-08-06T18:58:50+00:00">
+					    <div>
+					        <div class="uk-countdown-number uk-countdown-days"></div>
+					        <h5 class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s fechalabel">D</h5>
+					    </div>
+					    <div class="uk-countdown-separator">:</div>
+					    <div>
+					        <div class="uk-countdown-number uk-countdown-hours"></div>
+					        <h5 class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s fechalabel">H</h5>
+					    </div>
+					    <div class="uk-countdown-separator">:</div>
+					    <div>
+					        <div class="uk-countdown-number uk-countdown-minutes"></div>
+					        <h5 class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s fechalabel">M</h5>
+					    </div>
+					    <div class="uk-countdown-separator">:</div>
+					    <div>
+					        <div class="uk-countdown-number uk-countdown-seconds"></div>
+					        <h5 class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s fechalabel">S</h5>
+					    </div>
+					</div>
+				
+
+				</div>
+<!-- 				<div class="refer">
+					<h4 style="margin: 0 !important; font-weight: 500; text-align: center;">Gana 100Mil(33USD) con cada nuevo socio que invites!.</h4>
+					<p style="font-size: 14px; padding-left: 10px;">Invita otras personas a formar parte de valorízate, recibirán cada uno 50 Mil(17 USD) cuando el nuevo socio realice su primera inversión.</p>
+					<div class="nuevoboton">Empezar a invitar YA!</div>
+
+				</div> -->
+
+
+			</div>	
+
+			<div class="panelInv2" style="display: none;">
+			<div id="meta2" style="transition: .3s; text-align: center;">
+			<span style="font-size: 12px;">Meta financiación <span class="icon-accessibility"/></span>
+
+			<div>
+			<span class="fuenteNumber LL" title="150 Millones COP" uk-tooltip="pos: bottom" style="font-size: 20px;">$150' (COP)</span>
+			<span class="fuenteNumber LL" title="50 Mil Dolares" uk-tooltip="pos: bottom" style="font-size: 20px;">- 50K (USD)</span>
+			</div>
+
+			</div>
+			<div id="rentInv">
+
+				<div id="rentab">
+					<div style="display: flex; height: calc(100% - 36px); justify-content: center; align-items: center; ">
+						<span id="RentAqui3" class="fuenteNumber" style="transition: .3s;">34</span>
+						<span id="RentAqui4" class="fuenteNumber"  style="transition: .3s;">%</span>
+					</div>
+				<span style="font-size: 12px; margin-top: 10px;">Rentabilidad Total</span>
+				</div>
+				<div id="people">
+				
+					<div style="display: flex; height: calc(100% - 36px); justify-content: center; align-items: center; ">
+						<span id="PeopleAqui3" class="fuenteNumber" style="transition: .3s;">20</span>
+						<span id="PeopleAqui4" class="fuenteNumber icon-history"  style="transition: .3s;"></span>
+					</div>
+				<span style="font-size: 12px; margin-top: 10px;">Meses</span>
+				</div>
+
+
+
+			</div>
+
+			<div id="progresoBar">
+			<div class="estado"><span style="font-size: 12px; margin-top: 10px;">Estado:</span><span class="icon-credit-card"> Recolectando Capital </span></div>
+			<div class="cprogreso">
+				
+				<div class="contfinal"> <img src="assets/images/usumul.png" class="inicio"><span class="meta fuenteNumber">0 M</span></div> 
+
+				<div class="contprogreso">
+					<div class="recaudado fuenteNumber" title="7 Mil Dolares" uk-tooltip="pos: top" >33% Recolectado<span class="alcanzado"></span> 
+					</div> 
+
+					<div class="progreso">
+						<div class="progresado" id="progresado2" style="transition: .3s;"></div>
+					</div>
+					<div class="tasa fuenteNumber">50 Millones (COP)</div>
+				</div> 
+
+				<div class="contfinal" title="Meta: 150 Millones (50K)" uk-tooltip="pos: bottom" > <img src="assets/images/exieq.png" class="final"><span class="meta fuenteNumber">150 M</span></div> 
+			</div>
+				
+			</div>
+
+			<div id="paInv">
+				    <div class="uk-margin">
+				        <div class="uk-inline" style="color: red !important;">
+				            <a class="uk-form-icon icon-coin-dollar" href="#" ></a>
+				            <input class="uk-input quieroInv" type="number" placeholder="Quiero invertir...">
+				        </div>
+				    </div>
+			<div class="subcm tocar nuevod" style="margin-top: 5px !important;"><a uk-toggle="target: #modal-close-default" onclick="conectarme();"><span style="margin-left: 7px;">Invertir YA!</span><span class="icon-credit-card iconos"/></a></div>
+			</div>
+		</div>
+
+			<div id="texAnali" class="contAnali">
+				
+			</div>
+
+			<div class="contcartografia" id="cartoo">
+					<div class="tituseccion" style="width: 100%;">
+						<h4 style="margin: 30px 0; " class="negrita">Cartografía.</h4>
+					</div>
+
+				<div class="cartografia">
+					<div class="tituseccion">
+						<h4 style="margin: 30px 0;" class="negrita">Mapa Usos del suelo</h4>
+					</div>
+					<!-- <a href="#modal-full" uk-toggle> -->
+					<div uk-toggle="target: #mapaUsoSuelo"  id="mapaAnali" class="contAnali  uk-card-hover uk-card-default" style="cursor: pointer; transition: .2s;"></div>
+					<!-- </a> -->
+				</div>
+
+				<div class="cartografia ">
+					<div class="tituseccion">
+						<h4 style="margin: 30px 0;" class="negrita">Mapa Malla vial</h4>
+					</div>
+					<div  uk-toggle="target: #mapaVial2"  id="mapaVial" class="contAnali uk-card-hover uk-card-default" style="cursor: pointer; transition: .2s;"></div>
+				</div>
+
+			</div>
+					<div class="tituseccion">
+						<h4 style="margin: 30px 0;" class="negrita">Mapa (Imágenes Satelitales)</h4>
+					</div>
+			<div class="contAnali" style="display: flex; flex-wrap: wrap;">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7729.948784235017!2d-76.18213133397516!3d4.096989034200238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sco!4v1499195818959" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			
+
+
+
+				<div id="estadRenta" ">
+				</div>
+					<div class="tituseccion">
+						<h4 style="margin: 30px 0;" class="negrita">Estadística Plusvalía</h4>
+					</div>
+				<div id="estadPlusva" class="contAnali" style="position: relative;">
+					  <div id="myPieChart" style="width: 100%; height: 100%;"></div>
+				</div>
+
+				<div id="documentacion" class="contAnali">
+					Documentación proyecto
+				</div>
+
+<!-- 				<div id="docuPlanos" class="contAnali">
+					
+				</div>
+				<div id="docuPlanos2" class="contAnali">
+					
+				</div>
+				<div id="docuPlanos3" class="contAnali">
+					
+				</div> -->
+				<div id="Permisos" class="contAnali">
+					Permisos de venta
+				</div>
+				<!-- <div id="permisosDoc" class="contAnali">
+					Contenido Permisos
+				</div> -->
+
+
+
+		</div>
+
+		<div class="panelInv">
+		    
+		    <div class="panelInv1">	
+				<div class="oporOut">
+				Esta oportunidad finaliza en:
+					<div id="fecha" class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: 2017-08-06T18:58:50+00:00">
+					    <div>
+					        <div class="uk-countdown-number uk-countdown-days"></div>
+					        <h5 class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s fechalabel">Días</h5>
+					    </div>
+					    <div class="uk-countdown-separator">:</div>
+					    <div>
+					        <div class="uk-countdown-number uk-countdown-hours"></div>
+					        <h5 class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s fechalabel">Horas</h5>
+					    </div>
+					    <div class="uk-countdown-separator">:</div>
+					    <div>
+					        <div class="uk-countdown-number uk-countdown-minutes"></div>
+					        <h5 class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s fechalabel">Minutos</h5>
+					    </div>
+					    <div class="uk-countdown-separator">:</div>
+					    <div>
+					        <div class="uk-countdown-number uk-countdown-seconds"></div>
+					        <h5 class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s fechalabel">Segundos</h5>
+					    </div>
+					</div>
+				<div class="subcm tocar nuevod" style="margin-top: 5px !important;"><a uk-toggle="target: #modal-close-default" onclick="conectarme();"><span style="margin-left: 7px;">Invertir YA!</span><span class="icon-credit-card iconos"/></a></div>
+
+				</div>
+				<div class="refer">
+					<h4 style="margin: 0 !important; font-weight: 500; text-align: center;">Gana 100Mil(33USD) con cada nuevo socio que invites!.</h4>
+					<p style="font-size: 14px; padding-left: 10px;">Invita otras personas a formar parte de valorízate, recibirán cada uno 50 Mil(17 USD) cuando el nuevo socio realice su primera inversión.</p>
+					<div class="nuevoboton">Empezar a invitar YA!</div>
+
+				</div>
+				<div class="redes"><span class="icon-linkedin"/><span class="icon-youtube2"/><span class="icon-rss2"/><span class="icon-twitter"/><span class="icon-facebook2"/><span class="icon-share2"/></div>
+
+			</div>	
+		<div class="panelInv2" id="stick" >
+			<div id="meta">
+			<span style="font-size: 12px;">Meta financiación <span class="icon-accessibility"/></span>
+
+			<div>
+			<span class="fuenteNumber LL" title="150 Millones COP" uk-tooltip="pos: bottom" style="font-size: 20px;">$150' (COP)</span>
+			<span class="fuenteNumber LL" title="50 Mil Dolares" uk-tooltip="pos: bottom" style="font-size: 20px;">- 50K (USD)</span>
+			</div>
+
+			</div>
+			<div id="rentInv">
+
+				<div id="rentab">
+					<div style="display: flex; height: calc(100% - 36px); justify-content: center; align-items: center; ">
+						<span id="RentAqui" class="fuenteNumber">34</span>
+						<span id="RentAqui2" class="fuenteNumber" >%</span>
+					</div>
+				<span style="font-size: 12px; margin-top: 10px;">Rentabilidad Total</span>
+				</div>
+				<div id="people">
+				
+					<div style="display: flex; height: calc(100% - 36px); justify-content: center; align-items: center; ">
+						<span id="PeopleAqui" class="fuenteNumber">20</span>
+						<span id="PeopleAqui2" class="fuenteNumber icon-history" ></span>
+					</div>
+				<span style="font-size: 12px; margin-top: 10px;">Meses</span>
+				</div>
+
+
+
+			</div>
+
+			<div id="progresoBar">
+			<div class="estado"><span style="font-size: 12px; margin-top: 10px;">Estado:</span><span class="icon-credit-card"> Recolectando Capital </span></div>
+			<div class="cprogreso">
+				
+				<div class="contfinal"> <img src="assets/images/usumul.png" class="inicio"><span class="meta fuenteNumber">0 M</span></div> 
+
+				<div class="contprogreso">
+					<div class="recaudado fuenteNumber" title="7 Mil Dolares" uk-tooltip="pos: top" >33% Recolectado<span class="alcanzado"></span> 
+					</div> 
+
+					<div class="progreso">
+						<div class="progresado" id="progresado"></div>
+					</div>
+					<div class="tasa fuenteNumber">50 Millones (COP)</div>
+				</div> 
+
+				<div class="contfinal" title="Meta: 150 Millones (50K)" uk-tooltip="pos: bottom" > <img src="assets/images/exieq.png" class="final"><span class="meta fuenteNumber">150 M</span></div> 
+			</div>
+				
+			</div>
+
+			<div id="paInv">
+				    <div class="uk-margin">
+				        <div class="uk-inline" style="color: red !important;">
+				            <a class="uk-form-icon icon-coin-dollar" href="#" ></a>
+				            <input class="uk-input quieroInv" type="number" placeholder="Quiero invertir...">
+				        </div>
+				    </div>
+			<div class="subcm tocar nuevod" style="margin-top: 5px !important;"><a uk-toggle="target: #modal-close-default" onclick="conectarme();"><span style="margin-left: 7px;">Invertir YA!</span><span class="icon-credit-card iconos"/></a></div>
+			</div>
+		</div>
+
+
+		</div>
+
+
+	</div>
+		
+	
+</div>

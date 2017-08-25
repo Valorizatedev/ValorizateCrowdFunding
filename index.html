@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=1,initial-scale=1,user-scalable=1" />
+  	 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Bienvenido a Valorizate</title>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous"> -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="assets/css/fonts/style.css">
+	 <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+	<link rel="stylesheet" href="admin/assets/fonts/style.css">
+
+
+
+	<!-- <script  src="assets/js/main.js" ></script> -->
+    	<script type="text/javascript">
+		// vamos hacer la peticion ajax
+		var root_="http://www.valorizate.com.co/backend/";
+		var urlInicio = "http://valorizate.com.co/"
+                // alert(location.href);
+                
+                if (location.href==urlInicio) {
+
+                   // document.getElementById("redireccioname").click();
+                        window.location.href = "http://www.valorizate.com.co/";
+                }else{
+
+                }
+	</script>
+    <!-- <script src="oportunidades/js/ready_opor.js"></script> -->
+
+	<!-- <script  src="assets/js/function.js" ></script> -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
+</head>
+
+
+<body link="white" vlink="#ffffff" alink="#ffffff" class="cuerpo" data-spy="scroll" data-target="#navegacion">
+
+<div id="menu1" style="width: 100%; position: absolute !important; background: #00665f; height: 50px; z-index: 10;"></div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<style type="text/css">
+	#contenidoGlobal{
+		padding: 0 !important;
+	}
+	.uk-notification-message{
+  /*background: #27AE61 !important;*/
+  color: red !important;
+  font-size: 14px !important;
+  text-align: center;
+}
+</style>
+
+<div id="contenidoGlobal">
+  <div class="seccion1">
+  <img src="assets/images/mapita.png" style=" height: 95%; width: 100%; opacity: 0;" id="mapita">
+
+  <span class="titular">Invierte desde 100 USD en las mejores oportunidades
+	del mercado inmobiliario y recibe rendimientos desde el primer mes.</span>
+  
+
+  </div>
+        <div  class="contenido" id="contenido">
+
+<!-- <div style="position: relative; ">
+           <input type="" class="infile" id="uimg2" value="" style="display: none"/>
+                        <div class="infile ingresarPer" id="regPerfil2" style="width: 30px; height: 30px; background: red;">
+                            <input type="file" class="infile"  style="display: none;">
+                        </div>
+</div> -->
+        </div>
+
+   <div  id="quEs">
+   <div class="mapa"></div>
+   <div style="display: flex; flex-direction: column;  text-align: center;   justify-content: center;  align-items: center; margin-bottom: 80px;">
+   <p style="     margin-bottom: 0 !important;  margin-top: 60px !important; font-size: 20px; height: 30px; font-weight: bold;">¿Qué es valorízate?</p>
+   <p class="que-es" style=" text-align: center;     margin-top: 30px !important;">¡Valorízate es el puente hacia la democratización del acceso al mercado inmobiliario para el ciudadano común, somos la primera herramienta financiera creada desde Colombia donde puedes invertir de manera colectiva en las mejores oportunidades inmobiliarias a corto plazo y con poco dinero!</p>
+   </div>
+   </div>
+
+
+   <div class="planesinversion">
+   	<img class="cohet" src="assets/images/cohete.png" style="width: 69px; height: 109px; position: absolute; z-index: 3; left: calc(50% - 34px); top: -30px;">
+   	<svg id="PoliCont"></svg>
+   	<div  id="porQue" >
+   <p style="font-size: 20px; height: 30px; font-weight: bold; margin-bottom: 80px !important;" class="txtcm blanco por" >¿Por qué invertir con Valorízate?</p>
+	   <div style="display: flex; flex-wrap: wrap;     justify-content: space-around;">
+
+	   		<div class="margenporq">
+	   			<p class="subti blanco">1.Más accesible</p>
+	   			<div style="display: flex; " class="centrovertical">
+	   				<img src="assets/images/accesible.png" style="width: 70px; height:70px;" class="imgp">
+	   				<p class="sinmargen">Invierte desde 100USD, junto a otros inversionistas en las mejores oportunidades del mercado inmobiliario.</p>
+	   			</div>
+	   		</div>	 
+
+	   		<div class="margenporq">
+	   			<p class="subti blanco">2.Más seguro</p>
+	   			<div style="display: flex; " class="centrovertical">
+	   				<img src="assets/images/seguridad.png" style="width: 70px; height:70px;" class="imgp">
+	   				<p class="sinmargen">Tu inversión es respaldada por un activo físico en constante revalorización, nunca pondrás en riesgo tu patrimonio.</p>
+	   			</div>
+	   		</div>
+	   		<div class="margenporq">
+	   			<p class="subti blanco">3.Más simple</p>
+	   			<div style="display: flex; " class="centrovertical">
+	   				<img src="assets/images/inteligente.png" style="width: 70px; height:70px;" class="imgp">
+	   				<p class="sinmargen">¡Olvídate de trámites y papeleo, puedes invertir a un par de clicks sin moverte de tu casa, nosotros lo hacemos todo por ti!</p>
+	   			</div>
+	   		</div>
+	   		<div class="margenporq">
+	   			<p class="subti blanco">4.Más rentable</p>
+	   			<div style="display: flex; " class="centrovertical">
+	   				<img src="assets/images/renta.png" style="width: 70px; height:70px;" class="imgp">
+	   				<p class="sinmargen">Que un depósito bancario, la verdad es absoluta, ¡Te lo demostramos con numeros!.</p>
+	   			</div>
+	   		</div>
+  		
+	   </div>
+   </div>
+   	
+   </div>
+
+
+
+
+<div class="contenedorPlan">
+   		<p class="txtcm subti" style="margin-bottom: 40px !important;">Planes de inversión.</p>
+<div class="contplanes">
+
+
+<div class="coplanes">
+	<div class="cadaplan">
+	<ul class="uk-subnav uk-subnav-pill" uk-switcher="connect: .switcher-container">
+    <li ><a href="#" class="planes" style="color: #666 !important;">Plan de inversión Premium (+70%)</a></li>
+    <li><a href="#" class="planes" style="color: #666 !important;">Plan de ahorro(+30%)</a></li>
+    <li><a href="#" class="planes" style="color: #666 !important;">Plan de inversión swift (+40%)</a></li>
+</ul>
+		<h5 class="negrita">Descripción: </h5>
+
+		<ul class="uk-switcher switcher-container uk-margin ">
+		    <li class="uk-animation-fade" ><p style="color: #666 !important; font-size: 15px; padding: 0 20px 0 20px;">Este plan te ofrece mayores rendimientos desde el corto plazo, consiste en la compra de terrenos estratégicos para la construcción inmediata o compra directa del activo (Bodega, Hotel, Apartamento etc…) que posteriormente será arrendado, una vez cumplida la meta de valorización, el activo se pondrá en venta y se efectuará el retorno total de tu inversión, este plan suele ser a corto plazo (24 – 48 meses) y puede alcanzar una utilidad bruta por encima del 70% ya que construimos el activo desde 0.</p></li>
+
+		    <li class="uk-animation-fade"><p style="color: #666 !important; font-size: 15px; padding: 0 20px 0 20px;">Este plan consiste en la compra de terrenos y proyectos sobre planos, principalmente en zonas de expansión para su posterior venta (12-36 meses), en este plan solo se retornan dineros pasado el tiempo estipulado en el proyecto, la utilidad proviene a raíz de la valorización del activo y varía entre el 7% - 30% anual dependiendo el proyecto de inversión.</p></li>
+
+		    <li class="uk-animation-fade"><p style="color: #666 !important; font-size: 15px; padding: 0 20px 0 20px;">Este plan de inversión genera rendimientos de manera casi inmediata, consiste en la compra de una propiedad (Local, bodega, apartamento etc…) que se arrienda inmeidatamente despues de la compra, una vez cumplida la meta de valorización, el activo se pondrá en venta y se efectuará el retorno total de tu inversión, este plan suele ser a corto plazo (12 – 24 meses) y puede alcanzar una utilidad bruta por encima del 40%. </p></li>
+		</ul>
+		<div>
+			<p style="color: #666; font-size: 12px; opacity: .5;">Tu dinero siempre estará seguro. En todas las modalidades de inversión, los dineros siempre serán manejados por medio de fiducias con entidades financieras, la plataforma nunca recibe ni manipula dineros de terceros, nosotros solo nos encargamos de gestionar las inversiones y conectar a los inversionistas de forma segura y anónima. </p>
+		</div>
+	</div>
+	<div class="cadaplan graficaplan">
+		<!-- <h4>Container 2</h4> -->
+
+		<ul class="uk-switcher switcher-container uk-margin">
+		    <li class="plann"> 
+
+		    <div style="display: flex; flex-wrap: wrap;">
+			    	 <div style="display: flex; align-items: center;">
+			    		<div class="bolita verde"></div>
+			    		<span style="color: #666 !important;">Comunidad</span>
+			    	  </div>
+			    	  <div style="display: flex; align-items: center;">
+			    		<div class="bolita azul"></div>
+			    		<span style="color: #666 !important;">Entidad Financiera</span>
+			    	  </div>
+			    	  <div style="display: flex; align-items: center;">
+			    		<div class="bolita fucsia"></div>
+			    		<span style="color: #666 !important;">Activo (Propiedad raíz)</span>
+			    	  </div>
+		    	  </div>
+		    	<img class="uk-animation-slide-right-small imgplan" src="assets/images/plan Premium.png" >
+
+		    </li>
+
+		    <li class="plann">
+		    	<div style="display: flex; flex-wrap: wrap;">
+			    	 <div style="display: flex; align-items: center;">
+			    		<div class="bolita verde"></div>
+			    		<span style="color: #666 !important;">Comunidad</span>
+			    	  </div>
+			    	  <div style="display: flex; align-items: center;">
+			    		<div class="bolita azul"></div>
+			    		<span style="color: #666 !important;">Entidad Financiera</span>
+			    	  </div>
+			    	  <div style="display: flex; align-items: center;">
+			    		<div class="bolita fucsia"></div>
+			    		<span style="color: #666 !important;">Activo (Propiedad raíz)</span>
+			    	  </div>
+		    	  </div>
+		    	<img class="uk-animation-slide-right-small imgplan" src="assets/images/plan ahorro.png" >
+		    </li>
+		    <li class="plann" >
+		    	  <div style="display: flex; flex-wrap: wrap;">
+			    	 <div style="display: flex; align-items: center;">
+			    		<div class="bolita verde"></div>
+			    		<span style="color: #666 !important;">Comunidad</span>
+			    	  </div>
+			    	  <div style="display: flex; align-items: center;">
+			    		<div class="bolita azul"></div>
+			    		<span style="color: #666 !important;">Entidad Financiera</span>
+			    	  </div>
+			    	  <div style="display: flex; align-items: center;">
+			    		<div class="bolita fucsia"></div>
+			    		<span style="color: #666 !important;">Activo (Propiedad raíz)</span>
+			    	  </div>
+		    	  </div>
+		    	<img class="uk-animation-slide-right-small imgplan" src="assets/images/plan1.png">
+
+		    </li>
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+
+
+<div id="sd" style="">
+
+   <div class="funcionaa" > 
+   		<div style="top: 240px;" class="comofun f1">
+   			<p class="subti txtcm">1.Regístrate</p>
+   			<p class="txtcm" >En solo 1 paso, tú eliges la oportunidad de inversión que mejor se ajuste a tus intereses.</p>
+   		</div>
+
+   		<div style="top: 170px;" class="comofun f2">
+   		<p class="subti txtcm">2.Invierte</p>
+   			<p class="txtcm" >Sigue en tiempo real el progreso de tus inversiones, puedes vender tus títulos de propiedad en cualquier momento (Esta función pronto estará disponible)</p>
+   		</div>
+
+   		<div style="top: 125px;" class="comofun f3">
+   			<p class="subti txtcm">3.Cobra tus rendimientos</p>
+   			<p class="txtcm" >Genera una doble rentabilidad de tu inversión, cada mes recibes tu parte proporcional del alquiler y el valor de tu participación aumenta junto con la revalorización del inmueble.</p>
+   		</div>
+   </div>
+
+   <div class="imac">
+   <img src="assets/images/portatil.png" style="position: absolute;">
+   <div></div>
+   <img src="https://www.adslzone.net/app/uploads/2017/01/groove-sample.gif"  style="width: 90%; height: 90%;">
+   </div>
+
+   <div id="comoFunciona">
+   <!-- <div id="comoF" style="background: black; width: 100%; height: 100%; position: absolute;"></div> -->
+	</div>
+
+   </div>
+
+<div class="blog">
+	<div class="contblog">
+<div style="width: 100%; margin-bottom: 50px;">
+	<p class="txtcm subti">Entérate de lo nuevo!</p>
+	<p style="text-align: center;">Nuestra dedicación es constante, y en <strong>Valorízate</strong>  siempre tenemos algo nuevo para contarte.</p>
+</div>
+
+		<div class="blogItem uk-card-default"> 
+			<div class="fotoblog"> <img class="imgblog" src="http://www.valorizate.com.co/blog/recursos/images/Blog/Avaluos/ConocimientoGeneral/consideracionesmin.jpg"> </div>
+			<div class="contenidoBlog">
+				<div class="titublog"><p style="margin-bottom: 0;">Consideraciones Valuatorias</p></div>
+				<div class="conteblog"><p class="conblog">Conoce los 5 principios generales comunmente utilizados en la valorización de inmuebles: Valor comercial o de mercado: es el precio mas probable...</p></div>
+			</div>
+			<div class="contcta">
+				<a href="http://www.valorizate.com.co/blog/articulos/avaluos/conocimientoGeneral/consideracionesValuatorias.html"  target="_blank"><div class="ctablog"><p>Leer más...</p></div></a>
+			</div>
+		</div>
+
+		<div class="blogItem uk-card-default"> 
+			<div class="fotoblog"> <img class="imgblog" src="http://www.valorizate.com.co/blog/recursos/images/Blog/Avaluos/ConocimientoGeneral/herramientasmin.jpg"> </div>
+			<div class="contenidoBlog">
+				<div class="titublog"><p style="margin-bottom: 0;">Conocimientos básicos del avaluador</p></div>
+				<div class="conteblog"><p class="conblog">La actividad valuatoria es una ciencia multidisciplinaria, que implica algunas veces formación de equipos de trabajo, compuestos por ingenieros, arquitec...</p></div>
+			</div>
+			<div class="contcta">
+				<a href="http://www.valorizate.com.co/blog/articulos/avaluos/conocimientoGeneral/herramientasConocimientosAvaluador.html"  target="_blank"><div class="ctablog"><p>Leer más...</p></div></a>
+			</div>
+		</div>
+
+		<div class="blogItem uk-card-default"> 
+			<div class="fotoblog"> <img class="imgblog" src="http://www.valorizate.com.co/blog/recursos/images/Blog/Avaluos/ConocimientoGeneral/principiosmin.jpg"> </div>
+			<div class="contenidoBlog">
+				<div class="titublog"><p style="margin-bottom: 0;">Principios en valoración de bienes</p></div>
+				<div class="conteblog"><p class="conblog">El conocimiento de todos los factores que contribuyen a generar el valor de un bien, es indispensable para determinar el justo precio de esa propiedad...</p></div>
+			</div>
+			<div class="contcta">
+				<a href="http://www.valorizate.com.co/blog/articulos/avaluos/conocimientoGeneral/principiosValoracionBienes.html"  target="_blank"><div class="ctablog"><p>Leer más...</p></div></a>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+
+<div style="width: 100%; background: white; margin-top: 100px;" >
+<p  style="text-align: center;  margin-top: 50px;  padding-top: 20px;">Déjanos tu opinión</p>
+<div class="fb-comments" data-href="https://www.valorizate.com.co" data-width="100%" data-numposts="5"></div>
+	
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+
+
+
+
+
+ 
+
+<!-- Se activa el boton oportunidades, se añade el link a el boton blog y se configura la interacción de los botones registrarme y conectarme ya -->
+<script  src="assets/js/jquery-3.1.1.min.js" ></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.js"></script>
+
+
+<!-- <script async src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit-icons.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/js/uikit.min.js"></script>
+	<!-- <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<!-- Cargamos la lista de oportunidades o proyectos -->
+
+<script type="text/javascript">
+
+// alert("No estas logueado");
+
+					
+
+				
+
+                	$("#footer").append($("<div>").load("menu.html #contFooter"));
+
+                	$("#menu1").append($("<div>").load("menu.html #menuNolog",function(){
+							
+							setTimeout(function(){
+							$("#fondoNav ").css("opacity","1");
+							}, 100);
+
+                	// $.getScript("assets/motionmenu/js/main.js");
+                	}));
+
+                	$("#contenidoGlobal").append($("<div>").load("menu.html #ModalSession",function(){
+                		            $.getScript("oportunidades/js/ready_opor.js");
+
+            $.getScript("oportunidades/js/function.js"); 
+                	}));
+
+
+
+					setTimeout(function(){
+			 $("#mapita ").css("animation","mapeins 1s forwards");     
+            $("#contenido").append($("<div>").load("oportunidades/oportunidades.html #oportunidades"));
+            $.getScript("oportunidades/js/slide.js");
+            
+
+
+
+
+			 $("#quEs ").css("opacity","1");     
+			$("#fondoNav ").css("opacity","1");
+			  // var alturas = 40;
+     //            $(window).on("scroll",function(){
+     //              if($(window).scrollTop()>alturas){
+     //                // $("#fondoNav").addClass("cabecera2");
+     //                $("#fondoNav ").css("opacity","1"); 
+     //              }else{
+     //                $("#fondoNav ").css("opacity","0"); 
+
+     //              }
+     //            });  
+
+			}, 400);
+ 
+
+
+</script>
+
+	  <script>
+
+
+
+      $(document).ready(function($){
+	    //detectar scroll hacia abajo
+   
+
+
+
+
+        // $("#oportunidad").toggleClass("activado");
+        // $("#oportunidad").toggleClass("amenuActive");
+        // $("a#blog").attr('href','https://www.valorizate.com.co');
+
+      });
+    </script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="admin/assets/js/AjaxUpload.2.0.min.js" type="text/javascript"></script>
+
+
+</body>
+</html>

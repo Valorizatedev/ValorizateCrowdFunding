@@ -1,0 +1,682 @@
+
+<div class="ListaProyectos" id="ListaProyectos">
+	
+	<style>
+			.agregar{
+				margin: 20px 0;
+				display: flex;
+				text-decoration: none;
+				
+				
+			    
+			}
+			#irAgregar1{
+				
+				color: #019687;
+				display: flex;  align-items: center;
+				font-size: 18px;
+				transition: .2s;
+
+			}
+			#irAgregar1:hover{
+				text-decoration: none;
+				cursor: pointer;
+				color: #02665d;
+			}
+	</style>
+
+
+
+		<div class="agregar">
+		<a id="irAgregar1" onclick="agregarp();"><span class="icon-stack" style="font-size: 20px; margin-right: 5px; "></span>Crear Proyecto</a>	
+		</div>
+		<!--La función agregaru se encuentra en el documento "admin.html" linea 129 aprox-->
+	
+	<div class="uk-overflow-auto ">
+		<table class="uk-table uk-table-hover uk-table-middle uk-table-divider uk-table-small" style="background: #F0F0F0; color: #085938;">
+			<tr style="background: white;">
+				<th>ID</th>
+				<th>Estado Financiación</th>
+				<th>Titulo Proyecto</th>
+				<th>Días restantes</th>
+				<th>Revalorización</th>
+				<th>Rentabilidad anual</th>
+				<th>Rentabilidad actual</th>
+				<th>ID</th>
+				
+			</tr>
+			<tr class="userlist">
+				<td>01</td>	
+				<td>En curso</td>
+				<td>Lote Plan parcial 5</td>
+				<td>10/20</td>
+				<td>30%</td>
+				<td>15%</td>
+				<td class="opciones">25%<div class="opciones"><div class="borrar" title="Eliminar"><span class="icon-bin" style="opacity: 0;"></span></div><div class="actualizar" title="Actualizar"><span class="icon-loop2" style="opacity: 0;"></span></div></div></td>
+			</tr>
+			<tr class="userlist">
+				<td>01</td>	
+				<td>En curso</td>
+				<td>Lote Plan parcial 5</td>
+				<td>10/20</td>
+				<td>30%</td>
+				<td>15%</td>
+				<td class="opciones">25%<div class="opciones"><div class="borrar" title="Eliminar"><span class="icon-bin" style="opacity: 0;"></span></div><div class="actualizar" title="Actualizar"><span class="icon-loop2" style="opacity: 0;"></span></div></div></td>
+			</tr>
+			<tr class="userlist">
+				<td>01</td>	
+				<td>En curso</td>
+				<td>Lote Plan parcial 5</td>
+				<td>10/20</td>
+				<td>30%</td>
+				<td>15%</td>
+				<td class="opciones">25%<div class="opciones"><div class="borrar" title="Eliminar"><span class="icon-bin" style="opacity: 0;"></span></div><div class="actualizar" title="Actualizar"><span class="icon-loop2" style="opacity: 0;"></span></div></div></td>
+			</tr>
+			<tr class="userlist">
+				<td>01</td>	
+				<td>En curso</td>
+				<td>Lote Plan parcial 5</td>
+				<td>10/20</td>
+				<td>30%</td>
+				<td>15%</td>
+				<td class="opciones">25%<div class="opciones"><div class="borrar" title="Eliminar"><span class="icon-bin" style="opacity: 0;"></span></div><div class="actualizar" title="Actualizar"><span class="icon-loop2" style="opacity: 0;"></span></div></div></td>
+			</tr>
+			<tr class="userlist">
+				<td>01</td>	
+				<td>En curso</td>
+				<td>Lote Plan parcial 5</td>
+				<td>10/20</td>
+				<td>30%</td>
+				<td>15%</td>
+				<td class="opciones">25%<div class="opciones"><div class="borrar" title="Eliminar"><span class="icon-bin" style="opacity: 0;"></span></div><div class="actualizar" title="Actualizar"><span class="icon-loop2" style="opacity: 0;"></span></div></div></td>
+			</tr>
+
+
+
+		</table>
+	</div>
+</div>
+
+
+<div class="AgregarProyecto" id="AgregarProyecto">
+	
+
+		<div class="paso1" id="paso1">
+	<style>
+		h1, h2, h3, h4, h5, p{
+				color: #888888 !important;
+			}
+			.paso1{
+				z-index: 1;
+			}
+			.contForm{
+				
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.control{
+
+			display:flex;
+			border-bottom: 1px solid #AAAAAA !important;
+			height: 40px;
+			margin-bottom: 40px;
+			width: 60%;
+			}
+
+			.creando{
+			    width: 100%;
+			    display: flex;
+			    margin-left: calc(50% - 140px);
+			   
+			    font-size: 24px;
+			    font-weight: 400;
+			    color: #888888;
+			   
+			}
+
+			.Form{
+				background: white;
+				/*width: 60%;*/
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				border-radius: 5px;
+				/*margin-bottom: 40px;
+				padding-bottom: 30px;*/
+				/*AS*/
+				padding: 2% 10% 2%;
+			}
+			
+			.botn{
+				height: 37px;
+				width: 400px !important;
+				margin: 15px 0;
+				border-radius: 5px;
+				border: 1px solid #08504d;
+				padding-left: 5px;
+			}
+			.continuar{
+				border: none;
+			    border-radius: 3px;
+			    color: white;
+				background: #00D000;
+				width: 95px;
+				height: 30px;
+				margin: 35px 0; 
+				cursor: pointer;
+			}
+			.fechaven{
+			 display: flex;
+   			 flex-wrap: wrap;
+   			 width: 400px;
+   			 justify-content: center;
+			}
+			.fechalabel{
+				width: 100%;
+			}
+			.fechav{
+				height: 37px;
+				margin: 15px 15px 15px 0;
+				border-radius: 5px;
+				border: 1px solid #08504d;
+				padding-left: 5px;
+			}
+			
+			.infile{
+				
+				width: 55px;
+				height: 55px;
+				cursor: pointer;
+				border-radius: 50%;
+				background-image: url("assets/imagenes/adjuntar.png");
+				border:none;
+			    background-position: center !important;
+			    background-size: cover !important;
+			    background-repeat: no-repeat !important;
+			}
+			.infile2{
+				
+				width: 55px;
+				height: 55px;
+				cursor: pointer;
+				border-radius: 50%;
+				background-image: url("assets/imagenes/pdf.png");
+				border:none;
+			    background-position: center !important;
+			    background-size: cover !important;
+			    background-repeat: no-repeat !important;
+			}
+			.añade{
+				margin-top: 8px;
+				width: 400px;
+				display: flex;
+				justify-content: left;
+				
+			}
+			
+			.foto{
+				margin: 7px 0;
+			}
+			.inicio, .final{
+				width: 140px !important;
+				padding-right: 0 !important;
+			}
+			.fechaInicioFin{
+				width: 400px;
+				display: flex;
+				flex-wrap: wrap;
+				margin: 20px 0 30px 0;
+			}
+			.textoFecha{
+				    margin: 0 5px;
+    				line-height: 34px;
+			}
+			.grupo{
+				margin: 20px 0;
+			}
+			.imgsproyectos, .imgspermisos, .imgsplanos, .imgsp{
+				width: 400px;
+				display: flex;
+				justify-content: left;
+				flex-wrap: wrap;
+			}
+			.plusva{
+				display: flex;
+				width: 100%;
+				flex-wrap: wrap;
+				margin-top: 7px;
+				margin-bottom: 7px;
+
+			}
+			.contenplusva{
+				display: flex;
+				flex-direction: column-reverse;
+				width: 100%;
+				justify-content: left;
+			}
+			.botn2{
+				margin-left: 10px;
+				width: 180px !important;
+			}
+	</style>
+			
+			<div class="contForm">
+			<div class="control">
+				<div class="volver">
+
+					<a id="volver" onclick="irListaProyectos();"> < Volver</a>	
+				</div>
+				<div class="creando">Creando Proyecto</div>
+			</div>
+			
+				<div class="Form">
+
+					<h3>Análisis de inversión</h3>
+					<div style="display: flex;"><h5 id="Idproyecto" > </h5><h5 id="idproject"></h5></div>
+					<input class="botn form-control" type="text" name="" placeholder="Titulo del proyecto"  id="tituloProyecto" >
+					<input class="botn form-control" type="text" name="" placeholder="Ubicación"  id="" >
+					<div class="fechaInicioFin">
+					<h5 style="width: 100%;">Recolección dinero de la inversión</h5>
+					<h5 class="textoFecha">Inicia: </h5><input type="date" class="form-control inicio" placeholder="Inicio" />
+					<h5 class="textoFecha">Finaliza: </h5><input type="date" class="form-control final" placeholder="Final" />
+					</div>
+					<input type="number" class="form-control botn" placeholder="Meta financiación" id=""  />
+					<input type="number" class="form-control botn" placeholder="Cantidad de meses para culminar la inversión" id=""  />
+					<input type="number" class="form-control botn" placeholder="Tasa de Rentabilidad" id=""  />
+					<input type="number" class="form-control botn" placeholder="Cantidad de inversionistas inicial"  id="" />
+					<input type="number" class="form-control botn" placeholder="Cantidad de dinero recolectado hasta la fecha" id=""  />
+
+
+
+					<div class="añade"><span class="icon-images"></span> <p style="margin-left: 5px;">Añade Fotos del proyecto</p></div>
+					<div class="imgsproyectos">
+
+						<input type="" name="uimg" id="uimg0" value="" style="display: none"/>
+						<div class="infile" id="imgproyectos0">
+							<input type="" id="imgproj0"  class="infile" style="opacity: 1;">
+						</div>
+
+					</div>
+						<input class="botn form-control" type="text" name="" placeholder="Añade URL video youtube">
+
+					<textarea style="height: 200px;" class="botn form-control" rows="3" placeholder="Descripción del proyecto"></textarea>
+
+
+					
+
+					<div class="añade"><span class="icon-images"></span> <p style="margin-left: 5px;">Añade Fotos Cartografícas del proyecto</p></div> 
+
+					<div class="imgsp">
+
+						<input type="" name="imgc" id="imgc" value="" style="display: none"/>
+						<div class="infile" id="imgcartografia">
+							<input type="" id="imgcarto"  class="infile" style="opacity: 1;">
+						</div>
+					</div>
+
+
+						<input class="botn form-control" type="text" name="" placeholder="Añade iframe de google maps">
+
+					
+					
+					
+					
+					
+			
+					<h3>Estadísticas</h3>
+					<p style="margin-left: 5px; width: 100%; font-size: 18px;">Datos Plusvalía</p>
+
+					<div class="contenplusva" id="contenplusva">
+					<input type="button" id="irPaso2" name="" value="Añadir Fecha" class="continuar" onclick="nuevaFecha();">
+					<div class="plusva">
+					
+					<h5 class="textoFecha">Fecha: </h5><input type="date" class="form-control inicio" placeholder="Inicio" />
+					<input class="botn2 form-control" type="number" name="" placeholder="Añade precio metro cuadrado">
+					</div>
+
+
+					</div>
+
+					<p style="margin-left: 5px; width: 100%; font-size: 18px;">Datos Renta anual</p>
+
+<!-- 					<div class="añade"><span class="icon-images"></span> <p style="margin-left: 5px;">Añade Fotos Balance de Ingresos</p></div> 
+
+
+					<div class="imgsp">
+
+						<input type="" id="imgingre" value="" style="display: none"/>
+						<div class="infile" id="imgingresos">
+							<input type="" id="imging"  class="infile" style="opacity: 1;">
+						</div>
+					</div> -->
+
+						<input class="botn form-control" type="number" name="" placeholder="Ingreso anual" id="">
+					<input class="botn form-control" type="number" name="" placeholder="Gasto anual"  id="">	
+					<input class="botn form-control" type="number" name="" placeholder="Rendimiento anual" id="">
+
+					<!-- <textarea style="height: 200px;" class="botn form-control" rows="3" placeholder="Descripción..."></textarea> -->
+					<!-- 
+
+
+					<input class="botn form-control" type="number" name="" placeholder="Revalorización de la zona">	
+					<input class="botn form-control" type="text" name="" placeholder="Titulo grafica plusvalía">
+					<textarea style="height: 200px;" class="botn form-control" rows="3" placeholder="Descripción..."></textarea>
+					 -->
+					
+
+					
+
+			
+					<h3>Documentación</h3>
+					<div class="grupo">
+					<h4>Planos 2D y/o 3D del proyecto</h4>
+					<div class="añade"><span class="icon-images"></span> <p style="margin-left: 5px;">Añade Fotos de planos 2D</p></div> 
+						<div class="imgsplanos">
+							<input type="" id="imgplan0" value="" style="display: none"/>
+							<div class="infile" id="imgplanos0">
+								<input type="" id="imgplano0"  class="infile" style="opacity: 1;">
+							</div>
+						</div>
+
+					<div class="añade"><span class="icon-images"></span> <p style="margin-left: 5px;">Añade Fotos de planos 3D</p></div> 
+
+					<div class="imgsp">
+						<input type="" id="imgplus" value="" style="display: none"/>
+						<div class="infile" id="imgplusvalia">
+							<input type="" id="imgplusv"  class="infile" style="opacity: 1;">
+						</div>
+					</div>
+					</div>
+						<input class="botn form-control" type="text" name="" placeholder="URl video youtube, Tour planos 3D">
+
+					<div class="grupo">
+					<h4>Permisos del proyecto</h4>
+					<div class="añade"><span class="icon-file-pdf"></span> <p style="margin-left: 5px;">Añade archivos PDF de los permisos del proyecto</p></div> 
+
+						<div class="imgspermisos">
+
+							<input type="" id="pdfperm0" value="" style="display: none"/>
+
+							<div class="infile2" id="pdfpermisos0" >
+								<input type="" id="pdfpermi0"  class="infile2" style="opacity: 1;">
+							</div>
+
+						</div>
+					</div>
+
+					<input type="button" id="irPaso2" name="" value="Crear proyecto" class="continuar" onclick="projectC();">
+				</div>
+			</div>
+		</div>
+
+
+		<script src="../assets/js/AjaxUpload.2.0.min.js" type="text/javascript"></script>
+
+</div>
+
+
+<!-- modificacion AS-->
+<!--div class="AgregarProyecto" id="AgregarProyecto">
+	
+
+	<div class="paso1" id="paso1">
+			<style>
+				h1, h2, h3, h4, h5, p{
+						color: #888888 !important;
+					}
+					.paso1{
+						z-index: 1;
+					}
+					.contForm{
+						
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+					}
+					.control{
+
+					display:flex;
+					border-bottom: 1px solid #AAAAAA !important;
+					height: 40px;
+					margin-bottom: 40px;
+					width: 60%;
+					}
+
+					.creando{
+					    width: 100%;
+					    display: flex;
+					    margin-left: calc(50% - 140px);
+					   
+					    font-size: 24px;
+					    font-weight: 400;
+					    color: #888888;
+					   
+					}
+
+					.Form{
+						background: white;
+						/*width: 60%;*/
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						border-radius: 5px;
+						/*margin-bottom: 40px;
+						padding-bottom: 30px;*/
+						/*AS*/
+						padding: 2% 10% 2%;
+					}
+					
+					.botn{
+						height: 37px;
+						width: 400px !important;
+						margin: 15px 0;
+						border-radius: 5px;
+						border: 1px solid #08504d;
+						padding-left: 5px;
+					}
+					.continuar{
+						border: none;
+					    border-radius: 3px;
+					    color: white;
+						background: #00D000;
+						width: 95px;
+						height: 30px;
+						margin: 35px 0; 
+						cursor: pointer;
+					}
+					.fechaven{
+					 display: flex;
+		   			 flex-wrap: wrap;
+		   			 width: 400px;
+		   			 justify-content: center;
+					}
+					.fechalabel{
+						width: 100%;
+					}
+					.fechav{
+						height: 37px;
+						margin: 15px 15px 15px 0;
+						border-radius: 5px;
+						border: 1px solid #08504d;
+						padding-left: 5px;
+					}
+					
+					.infile{
+						
+						width: 55px;
+						height: 55px;
+						cursor: pointer;
+						border-radius: 50%;
+						background-image: url("assets/imagenes/adjuntar.png");
+						border:none;
+					    background-position: center !important;
+					    background-size: cover !important;
+					    background-repeat: no-repeat !important;
+					}
+					.infile2{
+						
+						width: 55px;
+						height: 55px;
+						cursor: pointer;
+						border-radius: 50%;
+						background-image: url("assets/imagenes/pdf.png");
+						border:none;
+					    background-position: center !important;
+					    background-size: cover !important;
+					    background-repeat: no-repeat !important;
+					}
+					.añade{
+						margin-top: 8px;
+						width: 400px;
+						display: flex;
+						justify-content: left;
+						
+					}
+					
+					.foto{
+						margin: 7px 0;
+					}
+					.inicio, .final{
+						width: 140px !important;
+						padding-right: 0 !important;
+					}
+					.fechaInicioFin{
+						width: 400px;
+						display: flex;
+						flex-wrap: wrap;
+						margin: 20px 0 30px 0;
+					}
+					.textoFecha{
+						    margin: 0 5px;
+		    				line-height: 34px;
+					}
+					.grupo{
+						margin: 20px 0;
+					}
+					.imgsproyectos, .imgspermisos, .imgsplanos, .imgsp{
+						width: 400px;
+						display: flex;
+						justify-content: left;
+						flex-wrap: wrap;
+					}
+			</style>
+					
+	<div class="contForm">
+				
+				<div class="control " style="width: 100%">
+					<div class="volver">
+						<a id="volver" onclick="irListaProyectos();"> < Volver</a>	
+					</div>
+					<div class="creando heading_b uk-margin-bottom">Creando Proyecto</div>
+				</div>
+			
+				
+				
+			    <div class="md-card Form">
+
+			        <div class="uk-grid" uk-margin>     
+		                <div class="uk-width-large-1-2" >
+
+		                <ul class="uk-tab" data-uk-tab="{connect:'#tabs_1_content'}" id="tabs_1" style="width: 100%">
+                                <li class="uk-active">
+                                	<a href="#">Proyecto</a>
+                                </li>
+                                <li>
+                                	<a href="#">Estadisticas</a>
+                                </li>
+                                <li class="named_tab">
+                                	<a href="#">Docuemntación</a>
+                                </li>
+                                
+                            </ul>
+                            <ul id="tabs_1_content" class="uk-switcher uk-margin">
+                                <li>
+                                	
+									<div style="display: flex;">
+										<h5 id="Idproyecto" > </h5>
+										<h5 id="idproject"></h5>
+									</div>
+									
+									<input class="botn form-control" type="text" name="" placeholder="Titulo del proyecto">
+									<div class="fechaInicioFin">
+									<h5 class="uk-width-1-1">Recolección dinero de la inversión</h5>
+									
+										<table style="width: 100%">
+											<tr>
+												<td>
+													 <div class="uk-input-group">
+				                                        <span class="uk-input-group-addon"><i class="uk-input-group-icon uk-icon-calendar"></i></span>
+				                                        <label for="uk_dp_1"><h5>Inicia</h5> </label>
+				                                        <input type="date" class="form-control inicio" placeholder="Inicio" />
+				                                    </div>
+												</td>
+												<td>
+													<div class="uk-input-group">
+				                                        <span class="uk-input-group-addon"><i class="uk-input-group-icon uk-icon-calendar"></i></span>
+				                                        <label for="uk_dp_1"><h5>Finaliza </h5></label>
+				                                        <input type="date" class="form-control final" placeholder="Final" />
+				                                    </div>
+												</td>
+											</tr>
+										</table>
+
+
+										
+		                               	<textarea style="height: 200px;width: 100%" class="botn form-control" rows="3" placeholder="Descripción del proyecto"></textarea>
+										<div class="añade uk-width-1-1">
+											<p style="margin-left: 5px;" class="uk-width-1-1">
+												<a class="md-btn md-btn-wave waves-effect waves-button uk-width-1-1" href="javascript:void(0)">
+												<span class="icon-images"></span>
+												Añade Fotos del proyecto 
+												</a>
+											</p>
+										</div>
+										<input class="botn form-control" type="text" name="" placeholder="URl video youtube">
+
+
+                                		<div class="añade uk-width-1-1">
+											<p style="margin-left: 5px;" class="uk-width-1-1">
+												<a class="md-btn md-btn-wave waves-effect waves-button uk-width-1-1" href="javascript:void(0)">
+												<span class="icon-images"></span>
+												Añade Fotos Cartografícas del proyecto
+												</a>
+											</p>
+										</div>
+										<input class="botn form-control" type="text" name="" placeholder="URl video youtube">
+							
+									<!--h5 class="textoFecha">Inicia: </h5><input type="date" class="form-control inicio" placeholder="Inicio" />
+									<h5 class="textoFecha">Finaliza: </h5><input type="date" class="form-control final" placeholder="Final" /-->
+									<!--/div>
+                                </li>
+                                <li>
+                                		
+                                </li>
+                                <li>Content 3</li>
+                            </ul>
+		                   
+		                </div>
+
+
+		                <div class="uk-width-large-1-2">
+		                    	
+		                   <h3 class="" style="width: 100%" >Análisis de inversión</h3>
+							<div style="display: flex;">
+								<h5 id="Idproyecto" > </h5>
+								<h5 id="idproject"></h5>
+							</div>
+							
+							<input class="botn form-control" type="text" name="" placeholder="Titulo del proyecto">
+
+		                </div>
+		            </div>
+          		</div>
+
+						   
+		</div>
+
+	</div>						
+
+
+
+</div -->

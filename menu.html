@@ -1,0 +1,1301 @@
+
+<div id="menuNolog">
+
+<style type="text/css">
+
+.content{
+        display: none !important;
+        transition: .3s;
+        transform: translateY(-120%);
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        height: 100%;
+        /*background: white !important;*/
+        z-index: 10;
+        background: rgba(1,105,95,1);
+background: -moz-linear-gradient(-45deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(1,105,95,1)), color-stop(100%, rgba(21,36,43,1)));
+background: -webkit-linear-gradient(-45deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+background: linear-gradient(135deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01695f', endColorstr='#15242b', GradientType=1 );
+    }  
+    
+    #redireccioname{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+        #regPerfil{
+        transform: scale(0.1,0.1);
+        opacity: 0;
+        transition: .2s;
+        display: none;
+        box-shadow: none !important;
+
+    }
+    #regPerfil2{
+                -webkit-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    -moz-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    }
+    .burguerMenu{
+    	font-size: 30px;
+    	cursor: pointer;
+    	line-height: 50px;
+    	display: none;
+    }
+     #conectarme2{
+        height: 40px !important;
+    }
+    @media screen and (max-width:600px){ 
+    #contmenumovil{
+    margin: 0;
+    border: none;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    align-items: center;
+}
+
+        #proyectos, #usuarios, #cuenta,  #proyectos2{
+    margin: 0 !important;
+    font-size: 18px;
+    text-align: center;
+        height: 90px;
+            display: flex;
+    align-items: center;
+}
+
+                #saberMas{
+            display: none;
+        }
+
+            #conectarme2{
+        display: initial !important;
+    }
+    .content{
+    	display: initial !important;
+    }
+    .burguerMenu{
+    	display: initial;
+    }
+        .menu {
+    padding:0 15px !important;
+	}
+    }
+    .openClose{
+    	transform: translateY(0%) !important;
+    }
+
+
+
+</style>
+
+		   <header id="cabecera" class="cabecera" >
+
+
+		   <div id="fondoNav"></div>
+            <nav class="menu" id="menu" ><!-- menu -->
+						<!-- <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden;">
+							<svg width="1000px" height="1000px" style=" top: -57px;" >
+								<path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+								<path id="pathB" d="M 300 500 L 700 500"></path>
+								<path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+							</svg>
+							<button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+						</div> -->	
+						<span class="icon-menu burguerMenu" onclick="abrirmenu();"></span>
+	  			
+
+
+			        <div class="suubcm tocar" onclick="cerrarmenu(), conectarme();" style="display: none;" id="conectarme2">
+                		<a  class="botoncito button cmenu" uk-toggle="target: #modal-close-default">Conectarme YA</a><span class="icon-lock icono"/>
+                    </div>
+
+
+ 				<div class="logotipo">
+                <a href="http://www.valorizate.com.co" id="redireccioname"></a>
+                    <img src="assets/images/isotipo.png" width="46" height="40" style="z-index: 5000; margin: 2px 3px;"> 
+                </div>
+
+	
+
+            <div id="Portadas" class="enlaces" >
+                <div class="inicial">
+                    <li class="subm2">
+                        <a id="oportunidad" class="amenu2 icon-home" href="http://www.valorizate.com.co/"></a>
+                    </li>
+                   
+<!--                     <li class="subm2">
+                        <a class="amenu2 " href="#experiencias">¿Como funciona?</a>
+                    </li> -->
+                   
+                    <div class="subm">
+                        <a id="blog" class="amenu" href="http://www.valorizate.com.co/blog/" target="_blank">Blog</span></a>
+                    </div>
+
+                  
+                     <div class="subcm2 "  onclick="registrarme();">
+                        <a id="regUsuario2" class="botonci button cmenu" uk-toggle="target: #modal-close-default" >Registrarme </a><span class="icon-pencil icono"></span>
+                    </div>
+
+
+                     <div class="subcm tocar" onclick="conectarme();">
+                		<a   class="botoncito button cmenu" uk-toggle="target: #modal-close-default">Conectarme YA</a><span class="icon-lock icono"/>
+                    </div>
+           		</div>
+            </div>
+               
+
+            </nav>	
+        </header>
+
+                <div class="content">
+
+                        <ul class="gn-menu" style="border: none; list-style: none;" id="contmenumovil" >
+
+                                <li class="subm" id="proyectos" onclick="abrirmenu(), registrarme();"> <a uk-toggle="target: #modal-close-default" id="investment">Registrarme</a></li>
+                               <!--  <li class="subm" id="usuarios" onclick=""><a id="oportunity">Oportunidades</a></li> -->
+                                <li class="subm" id="proyectos" onclick="abrirmenu();"> <a id="investment" href="http://www.valorizate.com.co/blog/">Blog</a></li>
+ 
+                        </ul>
+
+
+                </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="menUsuario"  >
+<style type="text/css">
+
+.activado{
+     background: #0F393B !important;
+     text-decoration: none !important;
+     border-left: 4px solid #A5D650 !important;
+     transition: 0.25s !important;
+}
+    .openClose{
+    	transform: translateY(0%) !important;
+    }
+    .content{
+        display: none !important;
+    }
+    @media screen and (max-width:600px){ 
+
+
+       #proyectos, #usuarios, #cuenta, #proyectos2{
+        
+            height: 90px;
+            display: flex;
+            align-items: center;
+         }
+
+        #saberMas{
+            display: none;
+        }
+
+    .menu {
+    justify-content: space-between !important;
+    padding:0 15px !important;
+	}
+
+    .burguerMenu{
+    	display: initial !important;
+    }
+
+    .suubcm{
+        display: initial;
+    }
+    .cadaplan{
+    width: 95%;
+}
+   #menu-icon-trigger{
+            top: -30px;
+    width: 40px;
+    }
+    .menu-icon-wrapper{
+        margin-left: 10px !important;
+        display: initial !important;
+    }
+
+.content{
+        display: initial !important;
+        transition: .3s;
+        transform: translateY(-120%);
+        position: fixed;
+        top: 50px;
+        width: 100%;
+        height: 100%;
+        /*background: white !important;*/
+        z-index: 10;
+        background: rgba(1,105,95,1);
+background: -moz-linear-gradient(-45deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(1,105,95,1)), color-stop(100%, rgba(21,36,43,1)));
+background: -webkit-linear-gradient(-45deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+background: linear-gradient(135deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01695f', endColorstr='#15242b', GradientType=1 );
+    }   
+#Mhorizontal{
+    display: none;
+}
+#gn-menu{
+    display: none !important;
+}
+.contemadre{
+        left: 0 !important ;
+}
+.cabecera{
+        left: 0px !important;
+        width: 100% !important;
+}
+
+.detalleInversion{
+    position: absolute !important;
+    left: 0 !important;
+}
+
+.subm2{
+    display: none;
+}
+
+#datosUsuario{
+	/*top: 10px;*/
+}
+}
+
+
+
+
+
+    #regPerfil{
+        transform: scale(0.1,0.1);
+        opacity: 0;
+        transition: .2s;
+        display: none;
+        box-shadow: none !important;
+
+    }
+    #regPerfil2{
+                -webkit-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    -moz-box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    box-shadow: -2px 13px 22px -9px rgba(0,0,0,0.74);
+    }
+
+html{
+    background: #E9E7ED !important;
+}
+#contenido{
+    margin: 50px 0px 0 30px;
+}
+.cabecera{
+    position: fixed;
+    top: 0;
+    left: 60px;
+-webkit-box-shadow: 0px 6px 19px -10px rgba(0,0,0,0.61);
+-moz-box-shadow: 0px 6px 19px -10px rgba(0,0,0,0.61);
+box-shadow: 0px 6px 19px -10px rgba(0,0,0,0.61);
+
+background: rgba(1,105,95,1);
+background: -moz-linear-gradient(left, rgba(1,105,95,1) 0%, rgba(1,105,95,1) 39%, rgba(20,41,47,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(1,105,95,1)), color-stop(39%, rgba(1,105,95,1)), color-stop(100%, rgba(20,41,47,1)));
+background: -webkit-linear-gradient(left, rgba(1,105,95,1) 0%, rgba(1,105,95,1) 39%, rgba(20,41,47,1) 100%);
+background: -o-linear-gradient(left, rgba(1,105,95,1) 0%, rgba(1,105,95,1) 39%, rgba(20,41,47,1) 100%);
+background: -ms-linear-gradient(left, rgba(1,105,95,1) 0%, rgba(1,105,95,1) 39%, rgba(20,41,47,1) 100%);
+background: linear-gradient(to right, rgba(1,105,95,1) 0%, rgba(1,105,95,1) 39%, rgba(20,41,47,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01695f', endColorstr='#14292f', GradientType=1 );
+
+    z-index: 100;
+    transition: .4s;
+    height: 50px;
+    margin: 0px 0px 0px 0px;
+    width: calc(100% - 60px);   
+    
+}
+.gn-trigger{
+    background: #01695F !important;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    color: white;
+    width: 100%;
+    z-index: 90000;
+}
+.enlaces{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    transition: .3s;
+}
+.inicial{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.modeditar{
+    width: 200px !important;
+    margin-bottom: 10px !important;
+    margin-left: 0 !important;
+}
+.subm2{
+
+   
+    height: 50px;
+    border-right: 3px solid #062E2E;
+    line-height: 50px;
+    margin: 0 10px;
+    list-style: none;
+    font-size: 15px;
+
+}
+.container{
+    position: relative;
+    z-index: 2;
+}
+
+.modale{
+    border-radius: 3% !important;
+}
+.subm2 a:hover{
+
+    background: #0F393B;
+
+
+     border-right: 4px solid #A5D650;
+     transition: 0.25s;
+
+}
+
+.subcm2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    top: 0px;
+    font-size: 16px;
+    line-height: 40px;
+    list-style: none;
+    width: 100px;
+    cursor: pointer;
+    transition: .2s;
+    
+
+}
+
+.subcm2:hover .icono{
+    opacity: 1;
+    color: #97c93E;
+     transform: translateY(0px);
+     transition: .3s;
+}
+
+.subcm2:hover a{
+    color: #97c93E !important;
+   
+}
+.subcm2 a{
+   color: #FFC371 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+            #Perfilpic2{
+                width: 250px;
+                height: 250px;
+                background: #e9e7ed;
+                border-radius: 50%;
+                backsground-image: url("https://pbs.twimg.com/profile_images/831544618097451008/7xJOQ0Xg.jpg");
+                 background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                -webkit-box-shadow: -1px 7px 12px -1px rgba(0,0,0,0.18);
+                -moz-box-shadow: -1px 7px 12px -1px rgba(0,0,0,0.18);
+                box-shadow: -1px 7px 12px -1px rgba(0,0,0,0.18);
+                margin-bottom: 40px;
+            }
+
+.amenu{
+    width: 90px;
+     text-decoration: none;
+     color: white;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    transition: .3s;
+    font-weight: 580;
+}
+.conlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+}
+.amenu:hover{
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    position: fixed;
+}
+
+.OpcionCuenta{
+
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    right: 0px;
+    width: 200px;
+    height: 50px;
+    background: #132b30;
+    opacity: 1;
+    border-bottom-left-radius: 5px;
+
+}
+
+#Cerrar{
+        color: wheat;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.opcionExp{
+        height: 35px;
+    margin-top: 5px;
+}
+.estilOpcion{
+    height: 100% !important;
+    width: 100% !important;
+    transition: .3s;
+    line-height: 35px;
+}
+
+#Cerrar:hover a{
+
+    color: #a5d650 !important;
+    background: #15242b !important;
+}
+    
+}
+.OpcionCuentaClic{
+    opacity: 1;
+    height: 100px;
+    animation-name: cuadrado;
+    animation-duration: .3s;
+}
+@keyframes cuadrado{
+    0%{
+        height: 45px;
+    }
+    100%{
+        height: 100px;
+    }
+
+
+}
+
+
+.containers{
+
+    margin: 60px 30px 80px 100px;
+
+}
+body {
+    background: #E9E7ED;
+     
+}
+.fuente{
+     font-family: 'Cabin', sans-serif;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+.fotoPerfil{
+        
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+#miCuenta:hover {
+    color: #A5D650;
+    background-color:transparent;
+    text-decoration: none; 
+    
+}
+.opcion2{
+    display: flex;
+    
+}
+.opcion{
+    margin: 0 10px;
+}
+#blog{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.miCuenta{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    
+}
+.miCuenta:active, .miCuenta:link, .miCuenta:visited{
+     color: white;
+     text-decoration: none;
+}
+
+
+.datosUsuario{
+   width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    transition: .3s;
+
+/*    height: 200px;
+    align-items: flex-start;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: .3s;*/
+}
+.contDataUser{
+    display: flex;
+}
+.datUsuarioExp{
+-webkit-clip-path: polygon(0 100%, 0 10%,45% 10%,50% 0,55% 10%, 100% 10%, 100% 100%);
+clip-path:         polygon(0 100%, 0 10%,45% 10%,50% 0,55% 10%, 100% 10%, 100% 100%);
+
+background: rgba(1,105,95,1);
+background: -moz-linear-gradient(-45deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(1,105,95,1)), color-stop(100%, rgba(21,36,43,1)));
+background: -webkit-linear-gradient(-45deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+background: linear-gradient(135deg, rgba(1,105,95,1) 0%, rgba(21,36,43,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01695f', endColorstr='#15242b', GradientType=1 );
+
+    width: 200px;
+    height: 60px;
+    border-radius: 3%;
+
+
+}
+
+#opcionesMenu{
+        list-style: none;
+    padding: 0;
+    text-align: center;
+    padding-top: 10px;
+}
+
+  #datUsuarioExp{
+    border-radius: 8%;
+
+    position: fixed;
+    top: 50px;
+    padding: 0 !important;
+    transition: .3s;
+    clip-path: circle(0% at 50% 0);
+      }
+
+      @keyframes hola{
+
+        0%{
+          clip-path: circle(0% at 50% 0);
+        }
+
+        100%{
+          clip-path: circle(100% at center);
+
+        }
+      }
+
+        @keyframes chao{
+
+        0%{
+          clip-path: circle(100% at center);
+        }
+
+        100%{
+          clip-path: circle(0% at 50% 0);
+        }
+      }
+
+
+.chao{
+    height: 100px;
+}
+
+
+
+            .datosp{
+                display: flex;
+                justify-content: center !important;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+
+            }
+.menu2{
+    display: flex;
+    justify-content: flex-end;
+
+-webkit-box-shadow: 0px 6px 19px -10px rgba(0,0,0,0.61);
+-moz-box-shadow: 0px 6px 19px -10px rgba(0,0,0,0.61);
+box-shadow: 0px 6px 19px -10px rgba(0,0,0,0.61);
+}
+.menu3{
+    background: rgba(1,63,65,1);
+background: -moz-linear-gradient(-45deg, rgba(1,63,65,1) 0%, rgba(0,103,95,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(1,63,65,1)), color-stop(100%, rgba(0,103,95,1)));
+background: -webkit-linear-gradient(-45deg, rgba(1,63,65,1) 0%, rgba(0,103,95,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(1,63,65,1) 0%, rgba(0,103,95,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(1,63,65,1) 0%, rgba(0,103,95,1) 100%);
+background: linear-gradient(135deg, rgba(1,63,65,1) 0%, rgba(0,103,95,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013f41', endColorstr='#00675f', GradientType=1 );
+}
+
+/*Menu Horizontal*/
+.item{
+     margin: 13px 70px 13px 20px;
+
+}
+.activo{
+    color: #A5D650;
+
+}
+.horizontal{
+    border: none;
+    transition: .3s;
+background: rgba(0,107,97,1);
+background: -moz-linear-gradient(-45deg, rgba(0,107,97,1) 0%, rgba(22,34,42,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,107,97,1)), color-stop(100%, rgba(22,34,42,1)));
+background: -webkit-linear-gradient(-45deg, rgba(0,107,97,1) 0%, rgba(22,34,42,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(0,107,97,1) 0%, rgba(22,34,42,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(0,107,97,1) 0%, rgba(22,34,42,1) 100%);
+background: linear-gradient(135deg, rgba(0,107,97,1) 0%, rgba(22,34,42,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006b61', endColorstr='#16222a', GradientType=1 );
+}
+
+
+.otroItem{
+        width: 78%;
+        text-align: center;
+}
+
+.subm{
+
+    border-left: 3px solid #062E2E !important;
+
+}
+#proyectos, #usuarios, #cuenta, #proyectos2{
+    margin: 0 !important;
+    font-size: 18px;
+}
+.subm a:hover{
+
+    background: #0F393B !important;
+
+    text-decoration: none !important;
+     border-left: 4px solid #A5D650 !important;
+     transition: 0.25s !important;
+
+}
+
+.display{
+    display: none;
+}
+
+
+
+
+
+
+
+            .userlist div span {
+                
+                padding-right: 25px;
+                
+            }
+
+        
+            
+            .userlist:hover > td > div span {
+                display:initial !important;
+                transition: .3s;
+                padding-right: 25px;
+                color: #CCCCCC;
+
+            }
+
+
+            .opciones, .opciones2{
+                display: flex;
+                justify-content: space-between;
+                border-style: none;
+                border:none !important;
+                padding:none !important;
+
+            }
+            .opciones2{
+                width: 80px;
+                
+                line-height: 50px;
+            }
+            .borrar:hover span{
+                color: #14282E !important;
+                cursor: pointer;
+                transition: .3s
+
+            }
+        
+            
+            .actualizar:hover span{
+                color: #14282E !important;
+                cursor: pointer;
+                transition: .3s
+            }
+            .volver{
+                width: 120px;
+            
+            }
+            #volver{
+                cursor: pointer;
+                height: 100%;
+                font-size: 18px;
+                text-decoration: none;
+                color: #AAAAAA;
+                transition: .2s;
+
+            }
+            #volver:hover{
+            color: #019687;
+            }
+            .opciont{
+                color: #DEDEDE;
+                margin-left: 25px;
+            }
+            .userlist:hover .opciont{
+                display:none;
+            }
+            .itemlista{
+                cursor: pointer;
+            }
+
+/*estilos tabla uikit*/
+#Lista_wrapper{
+       display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+        flex-direction: row-reverse;
+}
+#Lista_wrapper label{
+    display: nosne;
+}
+.uk-table{
+    width: 100% !important;
+}
+
+input, select{
+
+    height: 30px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555 !important;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.thh{
+    font-size: 10px !important;
+}
+td{
+    border: none !important;
+}
+
+.paginate_button {
+    background: #E9E7ED;
+     margin: 3px 10px;
+    border-radius: 10%;
+    padding: 1px 5px;
+    text-decoration: none;
+    color: gray;
+    transition: .3s;
+}
+
+.paginate_button:hover, .current {
+    text-decoration: none;
+    background: #DAD6E2;
+    color: white;
+}
+
+.responsiveStiles td{
+    text-align: center;
+}
+.responsiveStiles img{
+    width: 100px;
+    height: 100px;
+}
+.paila{
+    overflow-y:hidden !important; 
+}
+#Lista_filter, #Lista_filter div{
+    display: flex;
+    
+    align-items: center;
+    flex-direction: row-reverse;
+}
+#Lista_filter label, #Lista_length label{
+    color:#E9E7ED;
+}
+#Lista_filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.userlist{
+    transition: .1s ease-out !important;
+}
+
+.userlist:hover {
+    background: #F9FCF1 !important;
+    color: #14643E;
+}
+#Lista_length{
+    display: flex;
+    align-items: center;
+}
+.uk-table-divider>:first-child>tr:not(:first-child), .uk-table-divider>:not(:first-child)>tr, .uk-table-divider>tr:not(:first-child) {
+    border-top: 1px solid white;
+}
+@media screen and (max-width:760px){
+    .opciones, .opciones2{
+    display: flex !important;
+    justify-content: center !important;
+    }
+    .userlist img{
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .opciont{
+            margin-left: 35px;
+    }
+
+    #contmenumovil{
+            margin: 0;
+    border: none;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    align-items: center;
+}
+#proyectos, #usuarios, #cuenta, #proyectos2 {
+    width: 100%;
+    font-size: 25px !important;
+    margin-bottom: 15px !important;
+
+}
+.subm a:hover {
+    background: none !important;
+    border-left: 0px !important;
+}
+.subm{
+    display: flex;
+    justify-content: center !important;
+}
+
+}
+
+    .burguerMenu{
+    	font-size: 30px;
+    	cursor: pointer;
+    	line-height: 50px;
+    	display: none;
+    }
+
+
+</style>
+ <header id="cabecera" class="cabecera" >
+            <nav class="menu" id="menu" ><!-- menu -->
+						<span class="icon-menu burguerMenu" onclick="abrirmenu();"></span>
+
+
+                        <div class="menu2"> 
+
+<!--                         <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: hidden; display: none;">
+                            <svg width="1000px" height="1000px" style=" top: -57px;" >
+                                <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                                <path id="pathB" d="M 300 500 L 700 500"></path>
+                                <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                            </svg>
+                            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                        </div> -->
+
+
+
+                    <div class="subm2 fuente" >
+                        <a id="blog" class="amenu" href="http://www.valorizate.com.co/blog/">Blog</span></a>
+                    </div>
+                    <div class="datosUsuario" id="datosUsuario"> 
+                        
+                        <div class="contDataUser">
+                            <img id="fotoPerfil" class="fotoPerfil" src="../assets/images/isotipo.png" width="41" height="35" > 
+                        
+                            <ul class="miCuenta" >
+                                <li>
+                                    <span class="miCuenta" style="" id="miCuenta" href="">
+                                        Mi cuenta
+                                    </span>
+                                </li> 
+                            </ul>
+                        </div>
+                    <div class="sobrExp hola" id="datUsuarioExp">
+                        <div class="datUsuarioExp sobrExp" >
+                            <ul id="opcionesMenu">
+                            <li id="Cerrar" class="opcionExp"> <a class="estilOpcion" onclick="cerrar();">Cerrar Sesión   <span class="icon-exit" style="font-size: 12px;"></span></a> </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    </div>  
+
+                </div>
+            </nav>  
+
+
+
+        </header>
+
+
+
+	  			<div class="content">
+
+
+
+                        <ul class="gn-menu" style="border: none; list-style: none;" id="contmenumovil">
+
+                                <li class="subm" id="proyectos2" onclick="miCuentaclick(),  abrirmenu();">
+                                    <a id="count">Mi Cuenta</a>
+
+                                </li>
+
+                                <li class="subm" id="proyectos2" onclick="abrirmenu(),oportunidadesClick();"><a id="oportunity">Oportunidades</a></li>
+                                <li class="subm" id="proyectos2" onclick="misInversionesClick(),  abrirmenu();"> <a id="investment">Mis inversiones</a></li>
+                                 <li class="subm" id="proyectos2" onclick="abrirmenu(), cerrar();"> <a id="investment"> Cerrar sessión</a></li>
+ 
+                            </ul>
+
+
+				</div>
+
+
+
+
+
+            <ul id="gn-menu" class="gn-menu-main menu3" style="width: 60px;">
+                <li class="gn-trigger">
+                <div class="logotipo">
+                    <img src="http://www.valorizate.com.co/assets/images/isotipo.png" width="41" height="35" style="z-index: 5000;    margin: 2px 3px;"> 
+                </div>
+                    <a class="gn-icon gn-icon-menu"></a>
+
+                    <nav id="Mhorizontal" class="gn-menu-wrapper gn-open-part horizontal" style="z-index: 999 !important">
+                        <div class="gn-scroller" style="position: relative;z-index: 1;">
+                            <ul class="gn-menu" style="border: none;">
+                            <!--
+                                <li class="gn-search-item buscar">
+                                    <input placeholder="Buscar" type="search" class="gn-search">
+                                    <a class="gn-icon gn-icon-search"><span>Buscar</span></a>
+                                </li>
+                            -->
+
+                                <li class="subm" id="cuenta" onclick="miCuentaclick();">
+                                    <a id="count"><span class="icon-user item fuente" id="item1"></span>Mi Cuenta</a>
+                                    <!-- Sub menu 
+                                    <ul class="gn-submenu">
+                                        <li><a class="gn-icon gn-icon-illustrator">Vector Illustrations</a></li>
+                                        <li><a class="gn-icon gn-icon-photoshop">Photoshop files</a></li>
+                                    </ul>
+                                    -->
+                                </li>
+                                <li class="subm" id="usuarios" onclick="oportunidadesClick();"><a id="oportunity"><span class="icon-home item item" id="item2"></span>Oportunidades</a></li>
+                                <li class="subm" id="proyectos" onclick="misInversionesClick();"> <a id="investment"><span class="icon-upload item" id="item3"></span>Mis inversiones</a></li>
+                                <!--
+                                <li>
+                                    <a class="gn-icon gn-icon-archive">Archives</a>
+                                    <ul class="gn-submenu">
+                                        <li><a class="gn-icon gn-icon-article">Articles</a></li>
+                                        <li><a class="gn-icon gn-icon-pictures">Images</a></li>
+                                        <li><a class="gn-icon gn-icon-videos">Videos</a></li>
+                                    </ul>
+                                </li>
+                                -->
+                            </ul>
+                        </div><!-- /gn-scroller -->
+                    </nav>
+
+                </li>
+
+
+                
+                
+            </ul>
+                
+        
+        </div>
+
+    
+
+        <input type="" name="idusuario" id="idusuario3" value="" class="display" />
+</div>
+
+<div id="contFooter" >
+<style type="text/css">
+ .contacto{
+    position: relative;
+        width: 100%;
+    display: flex;
+    margin-top: 0px;
+    height: 400px;
+    color: white;
+background: #094d4a;
+}   
+
+.centrado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.botn2{
+    width: 270px !important;
+    height: 40px !important;
+    padding: 0 10px !important;
+}
+.felicidad{
+        width: 100px;
+    height: 40px;
+    border: none;
+    background: #27AE61;
+    color: white;
+    font-weight: 600;
+}
+.logotipoFooter{
+        width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ubicacion{
+    margin-top: 30px; position: relative; z-index: 30; width: 50%;
+}
+@media screen and (max-width:690px){
+    .contacto{
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+}
+.logotipoFooter {
+    height: 40%;
+}
+.ubicacion{
+        width: 100%;
+    height: 40%;
+}
+}
+
+</style>
+    <div class="contacto">
+
+    <div style=" display: flex; flex-direction: column; align-items: center; position: relative; z-index: 3; width: 50%;  height: 100%;">
+        <p class="txtcm subti" style="margin-top: 30px !important;">¡Suscríbete Ya!</p>
+        <p style="text-align: center;">Entérate de Eventos - Meetups - Contenido y más..</p>
+        <div  class="centrado"><input class="botn2 uk-search-input" type="text" name="" placeholder="Correo Electronico" id="Correo"><input type="button" value="Suscribirme" style="width: 100px; height: 40px;" class="felicidad"></div>
+        <div class="logotipoFooter">
+       
+        <p style="margin-top: 30px;">Cel: 315 608 5539</p>
+        <p>Dir: Calle 25 # 26 -38 Oficina 203</p>
+        <img src="assets/images/logotipo.png" style="width: 296px; height: 67px;">
+        </div>
+    </div>
+
+
+
+
+
+    <div class="ubicacion">
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d3756.317020805251!2d-76.1967900998387!3d4.085542303258071!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d4.0858791!2d-76.1963832!5e0!3m2!1sen!2sco!4v1500531734331" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    </div>
+</div>
+
+
+<div id="ModalSession">
+	
+       <div id="modal-close-default" uk-modal>
+                <!-- <button class="" type="button" ></button> -->
+
+            <div class="uk-modal-dialog uk-modal-body cuerpomodal">
+                    <div class="formularioLogin" id="windowb">
+
+                        <div id="cerrar2" class="cerrar"  style="z-index: 5;">
+                            <label  class="close" id="iconocorreo2"><span class="icon-close cerrar2 uk-modal-close-default" ></label>
+                        </div> 
+
+                        <div style="margin-bottom: 10px;" id="holab">
+                            <h1 class="hola">¡Hola!<br> Bienvenido</h1>
+                        </div>
+
+                       
+                        <div style="position: relative;" id="regPerfil">
+                            <input type="" class="infile" id="uimg2" value="" style="display: none"/>
+                            <div class="infile ingresarPer" id="regPerfil2" style="width: 100px; height: 100px !important;">
+                                <input type="file" class="infile"  style="display: none;">
+                            </div>
+                        </div>
+
+                        <div class="window-container zoomin" >
+
+                        <div id="divCorreo2" class="div-correo" style="display: none; color: orange; margin:15px 0; width: 350px; text-align: center;">  <span class="icon-warning" style="font-size: 23px"></span>
+                                Ups!, al parecer el correo ya se encuentra registrado o no has llenado todos los campos debidamente. Vuelve a intentarlo :).
+                            </div>
+                                <input id="identificador" type="text" placeholder="id" class="display"> 
+
+                            <div class="form-group2 nombre display">
+                                <label class="iconocorreo "><span class="icon-person_add"></label>
+                                <input class="correoL " id="nombre" type="text" placeholder="Nombre"> 
+                            </div>
+
+                            <br/>
+                            
+                            <div id="divCorreo" class="div-correo display" style="color: orange; margin:15px 0; width: 350px; text-align: center;"><span class="icon-warning" style="font-size: 23px"></span>
+                                ¡Ups!, has escrito mal el usuario o la constraseña. Vuelve a intentarlo :). 
+                            </div>
+                            <div class="form-group2">
+                                <label class="iconocorreo">
+                                <span class="icon-mail_outline"></label> 
+
+                                <input type="text"  name="email"  id="usuario"  required class="correoL correo" placeholder="Correo electronico" />
+
+                            </div>
+                            
+                            <br/>
+
+                            <div class="form-group2 ">
+                                <label class="iconocorreo">
+                                <span class="icon-lock"></label>
+                                <input type="password" name="pass" id="pass"   placeholder="Contraseña" required class="correoL contraseña " />
+
+                               
+                            </div>
+
+                            <br/>
+                            <div class="cnct2">
+                            <a id="go" name="go" class="conectar cnct" onclick="login();">
+
+                                <span class="avion icon-flight"></span>
+
+                                <h4 class="texcom">Iniciar sesión</h4>
+                            </a>
+                            </div>
+
+                            
+
+                            <a id="registra" class="conectar registra display" onclick="registrar();">
+                                <span class="avion icon-flight"></span>
+                                <h4 class="texcom2">Registrarme</h4>
+                            </a>
+                            <br/>
+
+                           
+
+                            <div class="registro">
+                                <a class="nuevo">Eres nuevo aquí?</a> 
+                                <a class="cuenta display">Ya tienes una cuenta?</a> 
+
+                                <br>
+
+                                <a class="registrame" style="color: #27AE61; cursor: pointer; background: rgba(0,0,0,0.2);" onclick="registrarme();">  
+                                  ¡REGÍSTRATE!
+                                </a>
+
+
+                                <a class="conectame display" style="color: #27AE61; cursor: pointer; background: rgba(0,0,0,0.2); " onclick="conectarme();"> ¡CONÉCTATE!</a>
+                            </div>
+                        </div>
+                    </div> 
+            </div>
+        </div>
+
+
+</div>
